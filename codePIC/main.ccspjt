@@ -14,18 +14,26 @@ Type=4
 1=main.c
 
 [ProjectLog]
-Days=1
+Days=2
 D1=05-03-2021
 D1_L=5
 D1_L1=[49661]Project Closed.
 D1_L2=[49662]Project Opened.
 D1_L3=[49708]Started Editing.
 D1_L4=[49871]Stopped Editing.
-TotalEdit=3
+TotalEdit=6
 TotalDebug=0
 D1_E=3
 D1_D=0
 D1_L5=[49871]Project Closed.
+D2=07-03-2021
+D2_L=4
+D2_L1=[66381]Project Opened.
+D2_L2=[66399]Started Editing.
+D2_L3=[66528]Stopped Editing.
+D2_E=3
+D2_D=0
+D2_L4=[66528]Project Closed.
 
 [Opened Files]
 1=main.c

@@ -1,6 +1,6 @@
-CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
+CCS PCM C Compiler, Version 5.025, 22679               07-Mar-21 18:28
 
-               Filename:   D:\DoAn\css c\main.lst
+               Filename:   D:\DoAn\machdieukhiendongco_khoaluan\codePIC\main.lst
 
                ROM used:   110 words (1%)
                            Largest free fragment is 2048
@@ -69,7 +69,7 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 0023:  MOVLW  07
 0024:  MOVWF  1C
 0025:  BCF    03.7
-....................   setup_adc(ADC_CLOCK_DIV_32);           // Set ADC conversion time to 32Tosc 
+....................   setup_adc(ADC_CLOCK_DIV_32);          
 0026:  BCF    1F.6
 0027:  BCF    03.5
 0028:  BCF    1F.6
@@ -78,13 +78,13 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 002B:  BSF    1F.7
 002C:  BCF    03.5
 002D:  BSF    1F.0
-....................   setup_adc_ports(AN0);                  // Configure AN0 as analog 
+....................   setup_adc_ports(AN0);                   
 002E:  BSF    03.5
 002F:  BCF    1F.0
 0030:  BSF    1F.1
 0031:  BSF    1F.2
 0032:  BSF    1F.3
-....................   set_adc_channel(0);                    // Select channel AN0 
+....................   set_adc_channel(0);                   
 0033:  MOVLW  00
 0034:  MOVWF  78
 0035:  BCF    03.5
@@ -92,7 +92,7 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 0037:  ANDLW  C7
 0038:  IORWF  78,W
 0039:  MOVWF  1F
-....................   setup_ccp1(CCP_PWM);                   // Configure CCP1 as a PWM 
+....................   setup_ccp1(CCP_PWM);                   
 003A:  BCF    22.2
 003B:  MOVF   22,W
 003C:  BSF    03.5
@@ -101,8 +101,7 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 003F:  BCF    07.2
 0040:  MOVLW  0C
 0041:  MOVWF  17
-....................   //setup_timer_2(T2_DIV_BY_16, 250, 1);   // Set PWM frequency to 500Hz 
-....................    setup_timer_2(T2_DIV_BY_16,125,1); 
+....................   setup_timer_2(T2_DIV_BY_16,125,1);//125=12000000/(Hz*16*4) =>1k4 Hz 
 0042:  MOVLW  00
 0043:  MOVWF  78
 0044:  IORLW  06
@@ -110,13 +109,13 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 0046:  MOVLW  7D
 0047:  BSF    03.5
 0048:  MOVWF  12
-....................   delay_ms(100);                         // Wait 100ms 
+....................   delay_ms(100);             
 0049:  MOVLW  64
 004A:  BCF    03.5
 004B:  MOVWF  23
 004C:  CALL   004
 ....................   while(TRUE){ 
-....................     i = read_adc();                      // Read from AN0 and store in i 
+....................     i = read_adc();                     
 004D:  BSF    1F.2
 004E:  BTFSC  1F.2
 004F:  GOTO   04E
@@ -126,7 +125,7 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 0053:  MOVWF  20
 0054:  MOVF   1E,W
 0055:  MOVWF  21
-....................     set_pwm1_duty(i);                    // PWM1 duty cycle set 
+....................     set_pwm1_duty(i);                    
 0056:  MOVF   21,W
 0057:  MOVWF  79
 0058:  MOVF   20,W
@@ -146,7 +145,7 @@ CCS PCM C Compiler, Version 5.025, 22679               05-Mar-21 13:48
 0066:  ANDLW  CF
 0067:  IORWF  77,W
 0068:  MOVWF  17
-....................     delay_ms(10);                        // Wait 10ms 
+....................     delay_ms(10);                        
 0069:  MOVLW  0A
 006A:  MOVWF  23
 006B:  CALL   004

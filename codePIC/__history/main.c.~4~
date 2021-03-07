@@ -9,7 +9,8 @@ void main(){
   setup_adc_ports(AN0);                  
   set_adc_channel(0);                  
   setup_ccp1(CCP_PWM);                  
-  setup_timer_2(T2_DIV_BY_16,125,1);//125=12000000/(Hz*16*4) =>1k4 Hz
+ 
+   setup_timer_2(T2_DIV_BY_16,125,1);
   delay_ms(100);            
   while(TRUE){
     i = read_adc();                    

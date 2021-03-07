@@ -27,13 +27,13 @@ ROM Allocation:
 000025  @cinit2
 
 Project Directory:
-    D:\DoAn\css c\
+    D:\DoAn\machdieukhiendongco_khoaluan\codePIC\
 
 Project Files:
-    main.c                                                  [05-Mar-21 13:48  CRC=C6EA92F4]
+    main.c                                                  [07-Mar-21 18:28  CRC=769164FA]
     C:\Program Files (x86)\PICC\Devices\16F877A.h           [18-Apr-14 16:56  CRC=4F277C97]
 
-Source signature=65398C22
+Source signature=14E05E28
 
 Units:
     main (main)
