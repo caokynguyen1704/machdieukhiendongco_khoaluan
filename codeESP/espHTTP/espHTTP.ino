@@ -3,12 +3,8 @@
 #include "ESP8266WebServer.h"
 
 
-int pin1=12;
-int pin2=13;
-int pin3=14;
-int pin4=15;
 ESP8266WebServer server(80);
-String SSIDname="iPhone của Ky";
+String SSIDname="HienDo";
 String SSIDpass="01645305146";
 String EQUIPname="Quạt Thông Minh";
 bool isON1=false;
