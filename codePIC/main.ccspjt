@@ -14,7 +14,7 @@ Type=4
 1=main.c
 
 [ProjectLog]
-Days=2
+Days=3
 D1=05-03-2021
 D1_L=5
 D1_L1=[49661]Project Closed.
@@ -34,6 +34,10 @@ D2_L3=[66528]Stopped Editing.
 D2_E=3
 D2_D=0
 D2_L4=[66528]Project Closed.
+D3=09-03-2021
+D3_L=2
+D3_L1=[44733]Project Opened.
+D3_L2=[46813]Project Closed.
 
 [Opened Files]
 1=main.c

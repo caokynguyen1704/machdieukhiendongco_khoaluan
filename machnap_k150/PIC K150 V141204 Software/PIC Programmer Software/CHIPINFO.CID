@@ -1,0 +1,4688 @@
+CHIPname=10F200
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000100
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=Y
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "加密功能" "不加密"=0FFF "加密"=0FF7
+LIST3 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+
+CHIPname=10F202
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=Y
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "加密功能" "不加密"=0FFF "加密"=0FF7
+LIST3 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+
+CHIPname=10F204
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000100
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=Y
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "加密功能" "不加密"=0FFF "加密"=0FF7
+LIST3 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+
+CHIPname=10F206
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=Y
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "加密功能" "不加密"=0FFF "加密"=0FF7
+LIST3 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+
+CHIPname=12C508
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=12
+CoreType=bit12_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12C508A
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=12
+CoreType=bit12_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12C509
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=12
+CoreType=bit12_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12C509A
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=12
+CoreType=bit12_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12CE518
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=12
+CoreType=bit12_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "做复位"=0FFF "做I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12CE519
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=12
+CoreType=bit12_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "做为复位"=0FFF "做为I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12C671
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "MCLR引脚" "做为复位"=3FFF "作为I/O"=3F7F
+LIST3 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST4 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作GP4"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作GP4"=3FFC "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2ADF "CP75"=15BF "全部加密"=009F
+
+CHIPname=12C672
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=0520
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "MCLR引脚" "做为复位"=3FFF "作为I/O"=3F7F
+LIST3 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST4 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作GP4"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作GP4"=3FFC "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2ADF "CP75"=15BF "全部加密"=009F
+
+CHIPname=12CE673
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "MCLR引脚" "做为复位"=3FFF "作为I/O"=3F7F
+LIST3 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST4 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作GP4"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作GP4"=3FFC "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2ADF "CP75"=15BF "全部加密"=009F
+
+CHIPname=12CE674
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=0520
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "MCLR引脚" "做为复位"=3FFF "作为I/O"=3F7F
+LIST3 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST4 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作GP4"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作GP4"=3FFC "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2ADF "CP75"=15BF "全部加密"=009F
+
+CHIPname=12F508
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "作为复位"=0FFF "作为I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12F509
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "MCLR引脚" "作为复位"=0FFF "作为I/O"=0FEF
+LIST3 FUSE1 "振荡方式" "外部RC"=0FFF "内部RC"=0FFE "XT"=0FFD "LP"=0FFC
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=12F629
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=31FF
+CPwarn=N
+CALword=Y
+BandGap=Y
+ICSPonly=N
+ChipID=0F80
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序数据" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "EEPROM数据" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "带隙电压基准" "最高"=3FFF "较高"=2FFF  "较低"=1FFF "最低"=0FFF
+LIST8 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC/3脚作I/O"=3FFB "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+
+CHIPname=12F675
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=31FF
+CPwarn=N
+CALword=Y
+BandGap=Y
+ICSPonly=N
+ChipID=0FC0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序数据" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "EEPROM数据" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "带隙电压基准" "最高"=3FFF "较高"=2FFF  "较低"=1FFF "最低"=0FFF
+LIST8 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC/3脚作I/O"=3FFB "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+
+CHIPname=12F683
+INCLUDE=Y
+SocketImage=8pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=60
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=00800
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0460
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "程序数据" "不加密"=3FFF "加密"=3FBF
+LIST5 FUSE1 "EEPROM数据" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "掉电监测" "BOD开/软件控制关"=3FFF "BOD睡眠时关/软件控制关"=3EFF "BOD由软件控制"=3DFF "BOD关"=3CFF
+LIST7 FUSE1 "内部振荡切换" "开"=3FFF "关"=3BFF
+LIST8 FUSE1 "振荡失效监测" "开"=3FFF "关"=37FF
+LIST9 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC"=3FFB "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+
+CHIPname=16C505
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=8
+OverProgram=11
+CoreType=bit12_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FF7
+LIST2 FUSE1 "MCLR引脚" "作为复位"=0FFF "作为I/O"=0FDF
+LIST3 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=0FFF "外部RC/3脚作I/O"=0FFE "内部RC/3脚作时钟输出"=0FFD "内部RC/3脚作I/O"=0FFC "HS"=0FFA "XT"=0FF9 "LP"=0FF8
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=002F
+
+CHIPname=16F505
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=6
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=20
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=Y
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FF7
+LIST2 FUSE1 "MCLR引脚" "作为复位"=0FFF "作为I/O"=0FDF
+LIST3 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=0FFF "外部RC/3脚作I/O"=0FFE "内部RC/3脚作时钟输出"=0FFD "内部RC/3脚作I/O"=0FFC "HS"=0FFA "XT"=0FF9 "LP"=0FF8
+LIST4 FUSE1 "加密位" "不加密"=0FFF "加密"=002F
+
+CHIPname=16C554
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=00CF
+
+CHIPname=16C558
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=00CF
+
+CHIPname=16C61
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "开"=3FFF "关"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16C62
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FBF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "开"=3FFF "关"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "CP50"=3FEF "CP75"=3FDF "全部加密"=3FCF
+
+CHIPname=16C62A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C62B
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C63
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C63A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C64
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FBF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C64A
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C65
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FBF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FBF "关"=3FBB
+LIST2 FUSE1 "上电廷时" "开"=3FBF "关"=3FB7
+LIST3 FUSE1 "振荡方式" "RC"=3FBF "HS"=3FBE "XT"=3FBD "LP"=3FBC
+LIST4 FUSE1 "加密位" "不加密"=3FBF "CP50"=3FAF "CP75"=3F9F "全部加密"=3F8F
+
+CHIPname=16C65A
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C65B
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C66
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0380
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C66A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C67
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C620
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=35DF
+
+CHIPname=16C620A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=35DF
+
+CHIPname=16C621
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=35DF
+
+CHIPname=16C621A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=35DF
+
+CHIPname=16C622
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C622A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C71
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "开"=3FFF "关"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16C71A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FF7
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=004F
+
+CHIPname=16C72
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C72A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C73
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FBF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FBF "关"=3FBB
+LIST2 FUSE1 "上电廷时" "开"=3FBF "关"=3FB7
+LIST3 FUSE1 "振荡方式" "RC"=3FBF "HS"=3FBE "XT"=3FBD "LP"=3FBC
+LIST4 FUSE1 "加密位" "不加密"=3FBF "CP50"=3FAF "CP75"=3F9F "全部加密"=3F8F
+
+CHIPname=16C73A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FBF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C73B
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FBF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C74
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "开"=3FFF "关"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "HALF"=3FEF "UPPER-256"=3FDF "全部加密"=3FCF
+
+CHIPname=16C74A
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C74B
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C76
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C77
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C710
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FF7
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=00CF
+
+CHIPname=16C711
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp2
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FF7
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=00CF
+
+CHIPname=16C712
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000400
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C716
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C745
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C765
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2AEF "CP75"=15DF "全部加密"=00CF
+
+CHIPname=16C773
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电复位电压" "2.5V"=3FFF "2.7V"=3BFF "4.2V"=37FF "4.5V"=33FF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2EEF "CP75"=1DDF "全部加密"=0CCF
+
+CHIPname=16C774
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=N
+PowerSequence=VccVpp1
+ProgramDelay=1
+ProgramTries=25
+OverProgram=3
+CoreType=bit14_A
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=Y
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电复位电压" "2.5V"=3FFF "2.7V"=3BFF "4.2V"=37FF "4.5V"=33FF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "CP50"=2EEF "CP75"=1DDF "全部加密"=0CCF
+
+CHIPname=16C83
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000200
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "开"=3FFF "关"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16C84
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000400
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "开"=3FFF "关"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16F54
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=7
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_B
+ROMsize=000200
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "振荡方式" "RC"=0FFF "HS"=0FFE "XT"=0FFD "LP"=0FFC
+LIST3 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=16F57
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=7
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit12_B
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=0FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=0FFF "关"=0FFB
+LIST2 FUSE1 "振荡方式" "RC"=0FFF "HS"=0FFE "XT"=0FFD "LP"=0FFC
+LIST3 FUSE1 "加密位" "不加密"=0FFF "加密"=0FF7
+
+CHIPname=16F627
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=07A0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "RA7:电阻 RA6:时钟输出"=3FFF "RA7:电阻 RA6:作为I/O"=3FFE "RA7:I/O RA6:作为时钟输出"=3FFD "内部时钟 RA7/RA6都做I/O"=3FFC "外部时钟 RA6作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "加密位" "不加密"=3FFF "CP50"=2BFF "CP75"=17FF "全部加密"=03FF
+
+CHIPname=16LF627A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1040
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "RA7:电阻 RA6:时钟输出"=3FFF "RA7:电阻 RA6:作为I/O"=3FFE "RA7:I/O RA6:作为时钟输出"=3FFD "内部时钟 RA7/RA6都做I/O"=3FFC "外部时钟 RA6作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F627A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1040
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "RA7:电阻 RA6:时钟输出"=3FFF "RA7:电阻 RA6:作为I/O"=3FFE "RA7:I/O RA6:作为时钟输出"=3FFD "内部时钟 RA7/RA6都做I/O"=3FFC "外部时钟 RA6作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F628
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000800
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=07C0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "RA7:电阻 RA6:时钟输出"=3FFF "RA7:电阻 RA6:作为I/O"=3FFE "RA7:I/O RA6:作为时钟输出"=3FFD "内部时钟 RA7/RA6都做I/O"=3FFC "外部时钟 RA6作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "加密位" "不加密"=3FFF "CP50"=2BFF "CP75"=17FF "全部加密"=03FF
+
+CHIPname=16LF628A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000800
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1060
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "RA7:电阻 RA6:时钟输出"=3FFF "RA7:电阻 RA6:作为I/O"=3FFE "RA7:I/O RA6:作为时钟输出"=3FFD "内部时钟 RA7/RA6都做I/O"=3FFC "外部时钟 RA6作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F628A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=70
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000800
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1060
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "RA7:电阻 RA6:时钟输出"=3FFF "RA7:电阻 RA6:作为I/O"=3FFE "RA7:I/O RA6:作为时钟输出"=3FFD "内部时钟 RA7/RA6都做I/O"=3FFC "外部时钟 RA6作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F630
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=31FF
+CPwarn=N
+CALword=Y
+BandGap=Y
+ICSPonly=N
+ChipID=10C0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序区加密区" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "带隙电压基准" "最高"=3FFF "较高"=2FFF  "较低"=1FFF "最低"=0FFF
+LIST8 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC/3脚作I/O"=3FFB "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+
+CHIPname=16F648A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=50
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1100
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "MCLR引脚" "作为复位脚"=3FFF "作为I/O"=3FDF
+LIST6 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC/3脚作I/O"=3FEF "LP"=3FEC "XT"=3FED "HS"=3FEE
+LIST7 FUSE1 "程序加密区" "不加密"=3FFF "加密"=1FFF
+LIST8 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+
+CHIPname=16F676
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_D
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=31FF
+CPwarn=N
+CALword=Y
+BandGap=Y
+ICSPonly=N
+ChipID=10E0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序区加密区" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "带隙电压基准" "最高"=3FFF "较高"=2FFF  "较低"=1FFF "最低"=0FFF
+LIST8 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC/3脚作I/O"=3FFB "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+
+CHIPname=16F683
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=60
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000800
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1280
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "程序加密区" "不加密"=3FFF "加密"=3FBF
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "掉电监测" "BOD开/软件控制关"=3FFF "BOD睡眠时关/软件控制关"=3EFF "BOD由软件控制"=3DFF "BOD关"=3CFF
+LIST7 FUSE1 "内外振荡切换" "开"=3FFF "关"=3BFF
+LIST8 FUSE1 "振荡失效监测" "开"=3FFF "关"=37FF
+LIST9 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+
+CHIPname=16F684
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=60
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000800
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1080
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "程序加密区" "不加密"=3FFF "加密"=3FBF
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "掉电监测" "BOD开/软件控制关"=3FFF "BOD睡眠时关/软件控制关"=3EFF "BOD由软件控制"=3DFF "BOD关"=3CFF
+LIST7 FUSE1 "内外振荡切换" "开"=3FFF "关"=3BFF
+LIST8 FUSE1 "振荡失效监测" "开"=3FFF "关"=37FF
+LIST9 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+
+CHIPname=16F688
+INCLUDE=Y
+SocketImage=14pin
+EraseMode=2
+FlashChip=Y
+PowerSequence=Vpp2Vcc
+ProgramDelay=60
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1180
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FF7
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FEF
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "程序加密区" "不加密"=3FFF "加密"=3FBF
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3F7F
+LIST6 FUSE1 "掉电监测" "BOD开/软件控制关"=3FFF "BOD睡眠时关/软件控制关"=3EFF "BOD由软件控制"=3DFF "BOD关"=3CFF
+LIST7 FUSE1 "内外振荡切换" "开"=3FFF "关"=3BFF
+LIST8 FUSE1 "振荡失效监测" "开"=3FFF "关"=37FF
+LIST9 FUSE1 "振荡方式" "外部RC/3脚作时钟输出"=3FFF "外部RC/3脚作I/O"=3FFE "内部RC/3脚作时钟输出"=3FFD "内部RC/3脚作I/O"=3FFC "EC"=3FFB "HS"=3FFA "XT"=3FF9 "LP"=3FF8
+
+CHIPname=16F72
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=1
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=000800
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=00A0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16F73
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=1
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0600
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16F74
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=1
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0620
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16F76
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=1
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0640
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16F77
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=1
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0660
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST5 FUSE1 "加密位" "不加密"=3FFF "加密"=3FEF
+
+CHIPname=16F737
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=3
+FlashChip=Y
+PowerSequence=VccFastVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF 3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0BA0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF&3FFF "睡眠时关"=3FFF&3FBF "软件控制开"=3FBF&3FFF "关"=3FBF&3FBF
+LIST5 FUSE1 "掉电复位电压" "2.0V"=3FFF "2.7V"=3F7F "4.2V"=3EFF "4.5V"=3E7F
+LIST6 FUSE1 "CCP选择" "RC1"=3FFF "RB3"=2FFF
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+LIST8 FUSE1 "振荡方式" "外部RC振荡/OSC2作时钟输出"=3FFF "外部RC振荡/OSC2作I/O"=3FFE "内部RC振荡/OSC2作时钟输出"=3FFD "内部RC振荡/OSC2作I/O"=3FFC "EC/OSC2作I/O"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST9 FUSE2 "振荡失效监控" "开"=3FFF "关"=3FFE
+LIST10 FUSE2 "内外振荡切换" "开"=3FFF "关"=3FFD
+
+CHIPname=16F747
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=3
+FlashChip=Y
+PowerSequence=VccFastVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=001000
+EEPROMsize=00000000
+FUSEblank=3FFF 3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0BE0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF&3FFF "睡眠时关"=3FFF&3FBF "软件控制开"=3FBF&3FFF "关"=3FBF&3FBF
+LIST5 FUSE1 "掉电复位电压" "2.0V"=3FFF "2.7V"=3F7F "4.2V"=3EFF "4.5V"=3E7F
+LIST6 FUSE1 "CCP选择" "RC1"=3FFF "RB3"=2FFF
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+LIST8 FUSE1 "振荡方式" "外部RC振荡/OSC2作时钟输出"=3FFF "外部RC振荡/OSC2作I/O"=3FFE "内部RC振荡/OSC2作时钟输出"=3FFD "内部RC振荡/OSC2作I/O"=3FFC "EC/OSC2作I/O"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST9 FUSE2 "振荡失效监控" "开"=3FFF "关"=3FFE
+LIST10 FUSE2 "内外振荡切换" "开"=3FFF "关"=3FFD
+
+CHIPname=16F767
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=3
+FlashChip=Y
+PowerSequence=VccFastVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF 3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0EA0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF&3FFF "睡眠时关"=3FFF&3FBF "软件控制开"=3FBF&3FFF "关"=3FBF&3FBF
+LIST5 FUSE1 "掉电复位电压" "2.0V"=3FFF "2.7V"=3F7F "4.2V"=3EFF "4.5V"=3E7F
+LIST6 FUSE1 "CCP选择" "RC1"=3FFF "RB3"=2FFF
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+LIST8 FUSE1 "振荡方式" "外部RC振荡/OSC2作时钟输出"=3FFF "外部RC振荡/OSC2作I/O"=3FFE "内部RC振荡/OSC2作时钟输出"=3FFD "内部RC振荡/OSC2作I/O"=3FFC "EC/OSC2作I/O"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST9 FUSE2 "振荡失效监控" "开"=3FFF "关"=3FFE
+LIST10 FUSE2 "内外振荡切换" "开"=3FFF "关"=3FFD
+
+CHIPname=16F777
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=3
+FlashChip=Y
+PowerSequence=VccFastVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_C
+ROMsize=002000
+EEPROMsize=00000000
+FUSEblank=3FFF 3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0DE0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF&3FFF "睡眠时关"=3FFF&3FBF "软件控制开"=3FBF&3FFF "关"=3FBF&3FBF
+LIST5 FUSE1 "掉电复位电压" "2.0V"=3FFF "2.7V"=3F7F "4.2V"=3EFF "4.5V"=3E7F
+LIST6 FUSE1 "CCP选择" "RC1"=3FFF "RB3"=2FFF
+LIST7 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+LIST8 FUSE1 "振荡方式" "外部RC振荡/OSC2作时钟输出"=3FFF "外部RC振荡/OSC2作I/O"=3FFE "内部RC振荡/OSC2作时钟输出"=3FFD "内部RC振荡/OSC2作I/O"=3FFC "EC/OSC2作I/O"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST9 FUSE2 "振荡失效监控" "开"=3FFF "关"=3FFE
+LIST10 FUSE2 "内外振荡切换" "开"=3FFF "关"=3FFD
+
+CHIPname=16F83
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=200
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000200
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=000F
+
+CHIPname=16F84
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=200
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000400
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=FFFF
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=000F
+
+CHIPname=16F84A
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=80
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000400
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0560
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST4 FUSE1 "加密位" "不加密"=3FFF "加密"=000F
+
+CHIPname=16F87
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_G
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=3FFF 3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0720
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序加密区" "不加密"=3FFF "加密"=1FFF
+LIST6 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "振荡方式" "外部RC/时钟输出"=3FFF "外部RC/I/O口"=3FFE "内部RC/时钟输出"=3FFD ",内部RC/作I/O口"=3FFC "EC/作I/O口"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST8 FUSE1 "CCPMx" "CCP1 RB0"=3FFF "CCP1 RB3"=2FFF
+LIST9 FUSE1 "Debug功能" "关"=3FFF "开"=37FF
+LIST10 FUSE1 "在线程序区改写" "关"=3FFF "0000-00FF"=3DFF "0000-07FF"=3BFF "0000-0FFF"=39FF
+LIST11 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST12 FUSE2 "时钟监视" "开"=3FFF "关"=3FFE
+LIST13 FUSE2 "内外切换" "开"=3FFF "关"=3FFD
+
+CHIPname=16F88
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVPP2
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_G
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=3FFF 3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0760
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序加密区" "不加密"=3FFF "加密"=1FFF
+LIST6 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "振荡方式" "外部RC/时钟输出"=3FFF "外部RC/I/O口"=3FFE "内部RC/时钟输出"=3FFD ",内部RC/作I/O口"=3FFC "EC/作I/O口"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST8 FUSE1 "CCPMx" "CCP1 RB0"=3FFF "CCP1 RB3"=2FFF
+LIST9 FUSE1 "Debug功能" "关"=3FFF "开"=37FF
+LIST10 FUSE1 "在线程序区改写" "关"=3FFF "0000-00FF"=3DFF "0000-07FF"=3BFF "0000-0FFF"=39FF
+LIST11 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST12 FUSE2 "时钟监视" "开"=3FFF "关"=3FFE
+LIST13 FUSE2 "内外切换" "开"=3FFF "关"=3FFD
+
+CHIPname=16F818
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_F
+ROMsize=000400
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=04C0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序加密区" "不加密"=3FFF "加密"=1FFF
+LIST6 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "振荡方式" "外部RC振荡/OSC2时钟输出"=3FFF "外部RC振荡/OSC2作I/O"=3FFE "内部RC振荡/OSC2作时钟输出"=3FFD "内部RC振荡/OSC2作I/O"=3FFC "EC"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST8 FUSE1 "CCPMx" "RB2"=3FFF "RB3"=2FFF
+LIST9 FUSE1 "Debug模式" "关"=3FFF "开"=37FF
+LIST10 FUSE1 "程序区写保护" "关"=3FFF "0000-01FF"=3DFF "0000-03FF"=3BFF
+LIST11 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+
+CHIPname=16F819
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_F
+ROMsize=000800
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=04E0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "MCLR引脚" "作为复位"=3FFF "作为I/O"=3FDF
+LIST4 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST5 FUSE1 "程序加密区" "不加密"=3FFF "加密"=1FFF
+LIST6 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST7 FUSE1 "振荡方式" "外部RC振荡/OSC2时钟输出"=3FFF "外部RC振荡/OSC2作I/O"=3FFE "内部RC振荡/OSC2作时钟输出"=3FFD "内部RC振荡/OSC2作I/O"=3FFC "EC"=3FEF "HS"=3FEE "XT"=3FED "LP"=3FEC
+LIST8 FUSE1 "CCPMx" "RB2"=3FFF "RB3"=2FFF
+LIST9 FUSE1 "Debug模式" "关"=3FFF "开"=37FF
+LIST10 FUSE1 "程序区写保护" "关"=3FFF "0000-01FF"=3DFF "0000-03FF"=3BFF
+LIST11 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+
+CHIPname=16F870
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000800
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0D00
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F871
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000800
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0D20
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F872
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=000800
+EEPROMsize=00000040
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=08E0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F873
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=001000
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0960
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F873A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_E
+ROMsize=001000
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0E40
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "WRT_256"=3DFF "WRT_1FOURTH"=3BFF "WRT_HALF"=39FF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16LF873A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_E
+ROMsize=001000
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0E40
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "WRT_256"=3DFF "WRT_1FOURTH"=3BFF "WRT_HALF"=39FF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F874
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=001000
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0920
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F874A
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_E
+ROMsize=001000
+EEPROMsize=00000080
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0E60
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "WRT_256"=3DFF "WRT_1FOURTH"=3BFF "WRT_HALF"=39FF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F876
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=09E0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F876A
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_E
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0E00
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "WRT_256"=3DFF "WRT_1FOURTH"=3BFF "WRT_HALF"=39FF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=16F877
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=0
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=40
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=09A0
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "关"=3DFF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "HALF"=2FEF "UPPER-256"=1FDF "全部加密"=0FCF
+
+CHIPname=16F877A
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=5
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit14_E
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=3FFF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0E20
+LIST1 FUSE1 "看门狗" "开"=3FFF "关"=3FFB
+LIST2 FUSE1 "上电廷时" "关"=3FFF "开"=3FF7
+LIST3 FUSE1 "掉电监测" "开"=3FFF "关"=3FBF
+LIST4 FUSE1 "低电压编程" "开"=3FFF "关"=3F7F
+LIST5 FUSE1 "EEPROM加密区" "不加密"=3FFF "加密"=3EFF
+LIST6 FUSE1 "在线程序区改写" "开"=3FFF "WRT_256"=3DFF "WRT_1FOURTH"=3BFF "WRT_HALF"=39FF
+LIST7 FUSE1 "DEBUG模式" "关"=3FFF "开"=37FF
+LIST8 FUSE1 "振荡方式" "RC"=3FFF "HS"=3FFE "XT"=3FFD "LP"=3FFC
+LIST9 FUSE1 "加密位" "不加密"=3FFF "加密"=1FFF
+
+CHIPname=18F242
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0480
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE3 "CCP2" "开"=FFFF "关"=FEFF
+LIST9 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST10 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST11 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST12 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST13 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST14 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST15 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST16 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST17 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST18 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST19 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST20 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST21 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+
+CHIPname=18F248
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0800
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST9 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST10 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST11 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST12 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST13 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST14 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST15 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST16 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST17 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST18 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST19 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST20 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST21 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST22 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+
+CHIPname=18F252
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0400
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE3 "CCP2 Mux" "开"=FFFF "关"=FEFF
+LIST9 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST10 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST11 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST12 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST13 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST14 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST15 FUSE5 "4000-5FFFH" "不加密"=FFFF "加密"=FFFB
+LIST16 FUSE5 "6000-7FFFH" "不加密"=FFFF "加密"=FFF7
+LIST17 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST18 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST19 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST20 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST21 FUSE6 "4000-5FFFH写保护" "无"=FFFF "有"=FFFB
+LIST22 FUSE6 "6000-7FFFH写保护" "无"=FFFF "有"=FFF7
+LIST23 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST24 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST25 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST26 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST27 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+LIST28 FUSE7 "4000-5FFFH读保护" "无"=FFFF "有"=FFFB
+LIST29 FUSE7 "6000-7FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F258
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0840
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST9 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST10 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST11 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST12 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST13 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST14 FUSE5 "4000-5FFFH" "不加密"=FFFF "加密"=FFFB
+LIST15 FUSE5 "6000-7FFFH" "不加密"=FFFF "加密"=FFF7
+LIST16 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST17 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST18 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST19 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST20 FUSE6 "4000-5FFFH写保护" "无"=FFFF "有"=FFFB
+LIST21 FUSE6 "6000-7FFFH写保护" "无"=FFFF "有"=FFF7
+LIST22 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST23 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST24 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST25 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST26 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+LIST27 FUSE7 "4000-5FFFH读保护" "无"=FFFF "有"=FFFB
+LIST28 FUSE7 "6000-7FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F442
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=04A0
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE3 "CCP2" "开"=FFFF "关"=FEFF
+LIST9 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST10 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST11 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST12 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST13 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST14 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST15 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST16 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST17 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST18 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST19 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST20 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST21 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+
+CHIPname=18F448
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0820
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST9 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST10 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST11 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST12 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST13 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST14 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST15 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST16 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST17 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST18 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST19 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST20 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST21 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST22 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+
+CHIPname=18F452
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0420
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE3 "CCP2 Mux" "开"=FFFF "关"=FEFF
+LIST9 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST10 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST11 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST12 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST13 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST14 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST15 FUSE5 "4000-5FFFH" "不加密"=FFFF "加密"=FFFB
+LIST16 FUSE5 "6000-7FFFH" "不加密"=FFFF "加密"=FFF7
+LIST17 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST18 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST19 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST20 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST21 FUSE6 "4000-5FFFH写保护" "无"=FFFF "有"=FFFB
+LIST22 FUSE6 "6000-7FFFH写保护" "无"=FFFF "有"=FFF7
+LIST23 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST24 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST25 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST26 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST27 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+LIST28 FUSE7 "4000-5FFFH读保护" "无"=FFFF "有"=FFFB
+LIST29 FUSE7 "6000-7FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F458
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0100 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0860
+LIST1 FUSE1 "时钟切换" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC/OSC2作为RA6"=FFFF "HS:锁相环"=FEFF "EC/OSC2作为RA6"=FDFF "EC/OSC2作为时钟输出"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗分频器" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST8 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST9 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST10 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST11 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST12 FUSE5 "0200-1FFFH" "不加密"=FFFF "加密"=FFFE
+LIST13 FUSE5 "2000-3FFFH" "不加密"=FFFF "加密"=FFFD
+LIST14 FUSE5 "4000-5FFFH" "不加密"=FFFF "加密"=FFFB
+LIST15 FUSE5 "6000-7FFFH" "不加密"=FFFF "加密"=FFF7
+LIST16 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST17 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST18 FUSE6 "0200-1FFFH写保护" "无"=FFFF "有"=FFFE
+LIST19 FUSE6 "2000-3FFFH写保护" "无"=FFFF "有"=FFFD
+LIST20 FUSE6 "4000-5FFFH写保护" "无"=FFFF "有"=FFFB
+LIST21 FUSE6 "6000-7FFFH写保护" "无"=FFFF "有"=FFF7
+LIST22 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST23 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST24 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST25 FUSE7 "0200-1FFFH读保护" "无"=FFFF "有"=FFFE
+LIST26 FUSE7 "2000-3FFFH读保护" "无"=FFFF "有"=FFFD
+LIST27 FUSE7 "4000-5FFFH读保护" "无"=FFFF "有"=FFFB
+LIST28 FUSE7 "6000-7FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F1220
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_A
+ROMsize=000800
+EEPROMsize=00000100
+FUSEblank=CF00 1F0F 8000 0085 C003 E003 4003
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=07E0
+LIST1 FUSE1 "时钟切换" "开"=FFFF "关"=7FFF
+LIST2 FUSE1 "时钟失效监控" "开"=FFFF "关"=BFFF
+LIST3 FUSE1 "振荡方式" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST6 FUSE2 "上电廷时" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "看门狗" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST10 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST11 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST12 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST13 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST14 FUSE5 "0200-07FFH" "不加密"=FFFF "加密"=FFFE
+LIST15 FUSE5 "0800-0FFFH" "不加密"=FFFF "加密"=FFFD
+LIST16 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST17 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST18 FUSE6 "0200-07FFH写保护" "无"=FFFF "有"=FFFE
+LIST19 FUSE6 "0800-0FFFH写保护" "无"=FFFF "有"=FFFD
+LIST20 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST21 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST22 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST23 FUSE7 "0200-07FFH读保护" "无"=FFFF "有"=FFFE
+LIST24 FUSE7 "0800-0FFFH读保护" "无"=FFFF "有"=FFFD
+
+CHIPname=18F1320
+INCLUDE=Y
+SocketImage=18pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp2
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_A
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=CF00 1F0F 8000 0085 C003 E003 4003
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=07C0
+LIST1 FUSE1 "时钟切换" "开"=FFFF "关"=7FFF
+LIST2 FUSE1 "时钟失效监控" "开"=FFFF "关"=BFFF
+LIST3 FUSE1 "振荡方式" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST6 FUSE2 "上电廷时" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "看门狗" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST10 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST11 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST12 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST13 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST14 FUSE5 "0200-0FFFH" "不加密"=FFFF "加密"=FFFE
+LIST15 FUSE5 "1000-1FFFH" "不加密"=FFFF "加密"=FFFD
+LIST16 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST17 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST18 FUSE6 "0200-0FFFH写保护" "无"=FFFF "有"=FFFE
+LIST19 FUSE6 "1000-1FFFH写保护" "无"=FFFF "有"=FFFD
+LIST20 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST21 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST22 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST23 FUSE7 "0200-0FFFH读保护" "无"=FFFF "有"=FFFE
+LIST24 FUSE7 "1000-1FFFH读保护" "无"=FFFF "有"=FFFD
+
+CHIPname=18F2220
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_A
+ROMsize=000800
+EEPROMsize=00000100
+FUSEblank=CF00 1F0F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0580
+LIST1 FUSE1 "时钟切换" "开"=FFFF "关"=7FFF
+LIST2 FUSE1 "时钟失效监控" "开"=FFFF "关"=BFFF
+LIST3 FUSE1 "振荡方式" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST6 FUSE2 "上电廷时" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "看门狗" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE3 "CCP2 Mux" "开"=FFFF "关"=FEFF
+LIST10 FUSE3 "PORTB AD" "开"=FFFF "关"=FDFF
+LIST11 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST12 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST13 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST14 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST15 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST16 FUSE5 "0200-07FFH" "不加密"=FFFF "加密"=FFFE
+LIST17 FUSE5 "0800-0FFFH" "不加密"=FFFF "加密"=FFFD
+LIST18 FUSE5 "1000-17FFH" "不加密"=FFFF "加密"=FFFB
+LIST19 FUSE5 "1800-1FFFH" "不加密"=FFFF "加密"=FFF7
+LIST20 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST21 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE6 "0200-07FFH写保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE6 "0800-0FFFH写保护" "无"=FFFF "有"=FFFD
+LIST24 FUSE6 "1000-17FFH写保护" "无"=FFFF "有"=17FB
+LIST25 FUSE6 "1800-1FFFH写保护" "无"=FFFF "有"=1FF7
+LIST26 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST27 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST28 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST29 FUSE7 "0200-07FFH读保护" "无"=FFFF "有"=FFFE
+LIST30 FUSE7 "0800-0FFFH读保护" "无"=FFFF "有"=FFFD
+LIST31 FUSE7 "1000-17FFH读保护" "无"=FFFF "有"=FFFB
+LIST32 FUSE7 "1800-1FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F2320
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_A
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=CF00 1F0F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0500
+LIST1 FUSE1 "时钟切换" "开"=FFFF "关"=7FFF
+LIST2 FUSE1 "时钟失效监控" "开"=FFFF "关"=BFFF
+LIST3 FUSE1 "振荡方式" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST6 FUSE2 "上电廷时" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "看门狗" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE3 "CCP2 Mux" "开"=FFFF "关"=FEFF
+LIST10 FUSE3 "PORTB AD" "开"=FFFF "关"=FDFF
+LIST11 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST12 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST13 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST14 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST15 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST16 FUSE5 "0200-07FFH" "不加密"=FFFF "加密"=FFFE
+LIST17 FUSE5 "0800-0FFFH" "不加密"=FFFF "加密"=FFFD
+LIST18 FUSE5 "1000-17FFH" "不加密"=FFFF "加密"=FFFB
+LIST19 FUSE5 "1800-1FFFH" "不加密"=FFFF "加密"=FFF7
+LIST20 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST21 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE6 "0200-07FFH写保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE6 "0800-0FFFH写保护" "无"=FFFF "有"=FFFD
+LIST24 FUSE6 "1000-17FFH写保护" "无"=FFFF "有"=17FB
+LIST25 FUSE6 "1800-1FFFH写保护" "无"=FFFF "有"=1FF7
+LIST26 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST27 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST28 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST29 FUSE7 "0200-07FFH读保护" "无"=FFFF "有"=FFFE
+LIST30 FUSE7 "0800-0FFFH读保护" "无"=FFFF "有"=FFFD
+LIST31 FUSE7 "1000-17FFH读保护" "无"=FFFF "有"=FFFB
+LIST32 FUSE7 "1800-1FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F4220
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_A
+ROMsize=000800
+EEPROMsize=00000100
+FUSEblank=CF00 1F0F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=05A0
+LIST1 FUSE1 "时钟切换" "开"=FFFF "关"=7FFF
+LIST2 FUSE1 "时钟失效监控" "开"=FFFF "关"=BFFF
+LIST3 FUSE1 "振荡方式" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST6 FUSE2 "上电廷时" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "看门狗" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE3 "CCP2 Mux" "开"=FFFF "关"=FEFF
+LIST10 FUSE3 "PORTB AD" "开"=FFFF "关"=FDFF
+LIST11 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST12 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST13 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST14 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST15 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST16 FUSE5 "0200-07FFH" "不加密"=FFFF "加密"=FFFE
+LIST17 FUSE5 "0800-0FFFH" "不加密"=FFFF "加密"=FFFD
+LIST18 FUSE5 "1000-17FFH" "不加密"=FFFF "加密"=FFFB
+LIST19 FUSE5 "1800-1FFFH" "不加密"=FFFF "加密"=FFF7
+LIST20 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST21 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE6 "0200-07FFH写保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE6 "0800-0FFFH写保护" "无"=FFFF "有"=FFFD
+LIST24 FUSE6 "1000-17FFH写保护" "无"=FFFF "有"=17FB
+LIST25 FUSE6 "1800-1FFFH写保护" "无"=FFFF "有"=1FF7
+LIST26 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST27 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST28 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST29 FUSE7 "0200-07FFH读保护" "无"=FFFF "有"=FFFE
+LIST30 FUSE7 "0800-0FFFH读保护" "无"=FFFF "有"=FFFD
+LIST31 FUSE7 "1000-17FFH读保护" "无"=FFFF "有"=FFFB
+LIST32 FUSE7 "1800-1FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F4320
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_A
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=CF00 1F0F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0520
+LIST1 FUSE1 "时钟切换" "开"=FFFF "关"=7FFF
+LIST2 FUSE1 "时钟失效监控" "开"=FFFF "关"=BFFF
+LIST3 FUSE1 "振荡方式" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST6 FUSE2 "上电廷时" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "看门狗" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE3 "CCP2 Mux" "开"=FFFF "关"=FEFF
+LIST10 FUSE3 "PORTB AD" "开"=FFFF "关"=FDFF
+LIST11 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST12 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST13 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST14 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST15 FUSE5 "0000-01FFH" "不加密"=FFFF "加密"=BFFF
+LIST16 FUSE5 "0200-07FFH" "不加密"=FFFF "加密"=FFFE
+LIST17 FUSE5 "0800-0FFFH" "不加密"=FFFF "加密"=FFFD
+LIST18 FUSE5 "1000-17FFH" "不加密"=FFFF "加密"=FFFB
+LIST19 FUSE5 "1800-1FFFH" "不加密"=FFFF "加密"=FFF7
+LIST20 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST21 FUSE6 "0000-01FFH写保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE6 "0200-07FFH写保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE6 "0800-0FFFH写保护" "无"=FFFF "有"=FFFD
+LIST24 FUSE6 "1000-17FFH写保护" "无"=FFFF "有"=17FB
+LIST25 FUSE6 "1800-1FFFH写保护" "无"=FFFF "有"=1FF7
+LIST26 FUSE6 "EEPROM数据写保护" "无"=FFFF "有"=7FFF
+LIST27 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST28 FUSE7 "0000-01FFH读保护" "无"=FFFF "有"=BFFF
+LIST29 FUSE7 "0200-07FFH读保护" "无"=FFFF "有"=FFFE
+LIST30 FUSE7 "0800-0FFFH读保护" "无"=FFFF "有"=FFFD
+LIST31 FUSE7 "1000-17FFH读保护" "无"=FFFF "有"=FFFB
+LIST32 FUSE7 "1800-1FFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F6525
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_C
+ROMsize=006000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0AE0
+LIST1 FUSE1 "Timer1系统时钟" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST7 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "外部总线等待" "关"=FFFF "开"=FF7F
+LIST9 FUSE3 "处理器模式" "微控制器"=FFFF "微处理器"=FFFE "带启动区的微处理器"=FFFD "扩展微控制器"=FFFC
+LIST10 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST11 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST12 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST13 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST14 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST15 FUSE5 "0000-07FFH" "不加密"=FFFF "加密"=BFFF
+LIST16 FUSE5 "0800-3FFFH" "不加密"=FFFF "加密"=FFFE
+LIST17 FUSE5 "0400-7FFFH" "不加密"=FFFF "加密"=FFFD
+LIST18 FUSE5 "8000-BFFFH" "不加密"=FFFF "加密"=FFFB
+LIST19 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST20 FUSE6 "0000-07FFH写保护" "无"=FFFF "有"=BFFF
+LIST21 FUSE6 "0800-3FFFH写保护" "无"=FFFF "有"=FFFE
+LIST22 FUSE6 "4000-7FFFH写保护" "无"=FFFF "有"=FFFD
+LIST23 FUSE6 "8000-BFFFH写保护" "无"=FFFF "有"=17FB
+LIST24 FUSE6 "EEPROM写保护" "无"=FFFF "有"=7FFF
+LIST25 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST26 FUSE7 "0000-07FFH读保护" "无"=FFFF "有"=BFFF
+LIST27 FUSE7 "0800-3FFFH读保护" "无"=FFFF "有"=FFFE
+LIST28 FUSE7 "4000-7FFFH读保护" "无"=FFFF "有"=FFFD
+LIST29 FUSE7 "8000-BFFFH读保护" "无"=FFFF "有"=FFFB
+
+CHIPname=18F6621
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_C
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0AA0
+LIST1 FUSE1 "Timer1系统时钟" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST7 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "外部总线等待" "关"=FFFF "开"=FF7F
+LIST9 FUSE3 "处理器模式" "微控制器"=FFFF "微处理器"=FFFE "带启动区的微处理器"=FFFD "扩展微控制器"=FFFC
+LIST10 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST11 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST12 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST13 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST14 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST15 FUSE5 "0000-07FFH" "不加密"=FFFF "加密"=BFFF
+LIST16 FUSE5 "0800-3FFFH" "不加密"=FFFF "加密"=FFFE
+LIST17 FUSE5 "0400-7FFFH" "不加密"=FFFF "加密"=FFFD
+LIST18 FUSE5 "8000-BFFFH" "不加密"=FFFF "加密"=FFFB
+LIST19 FUSE5 "C000-FFFFH" "不加密"=FFFF "加密"=FFF7
+LIST20 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST21 FUSE6 "0000-07FFH写保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE6 "0800-3FFFH写保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE6 "4000-7FFFH写保护" "无"=FFFF "有"=FFFD
+LIST24 FUSE6 "8000-BFFFH写保护" "无"=FFFF "有"=17FB
+LIST25 FUSE6 "C000-FFFFH写保护" "无"=FFFF "有"=1FF7
+LIST26 FUSE6 "EEPROM写保护" "无"=FFFF "有"=7FFF
+LIST27 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST28 FUSE7 "0000-07FFH读保护" "无"=FFFF "有"=BFFF
+LIST29 FUSE7 "0800-3FFFH读保护" "无"=FFFF "有"=FFFE
+LIST30 FUSE7 "4000-7FFFH读保护" "无"=FFFF "有"=FFFD
+LIST31 FUSE7 "8000-BFFFH读保护" "无"=FFFF "有"=FFFB
+LIST32 FUSE7 "C000-FFFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F8525
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_C
+ROMsize=006000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0AC0
+LIST1 FUSE1 "Timer1系统时钟" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST7 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "外部总线等待" "关"=FFFF "开"=FF7F
+LIST9 FUSE3 "处理器模式" "微控制器"=FFFF "微处理器"=FFFE "带启动区的微处理器"=FFFD "扩展微控制器"=FFFC
+LIST10 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST11 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST12 FUSE3 "ECCMUX" "ENH CCP1 RE6 3"=FFFF "ENH CCP1 RH7 4"=FDFF
+LIST13 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST14 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST15 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST16 FUSE5 "0000-07FFH" "不加密"=FFFF "加密"=BFFF
+LIST17 FUSE5 "0800-3FFFH" "不加密"=FFFF "加密"=FFFE
+LIST18 FUSE5 "0400-7FFFH" "不加密"=FFFF "加密"=FFFD
+LIST19 FUSE5 "8000-BFFFH" "不加密"=FFFF "加密"=FFFB
+LIST20 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST21 FUSE6 "0000-07FFH写保护" "无"=FFFF "有"=BFFF
+LIST22 FUSE6 "0800-3FFFH写保护" "无"=FFFF "有"=FFFE
+LIST23 FUSE6 "4000-7FFFH写保护" "无"=FFFF "有"=FFFD
+LIST24 FUSE6 "8000-BFFFH写保护" "无"=FFFF "有"=17FB
+LIST25 FUSE6 "EEPROM写保护" "无"=FFFF "有"=7FFF
+LIST26 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST27 FUSE7 "0000-07FFH读保护" "无"=FFFF "有"=BFFF
+LIST28 FUSE7 "0800-3FFFH读保护" "无"=FFFF "有"=FFFE
+LIST29 FUSE7 "4000-7FFFH读保护" "无"=FFFF "有"=FFFD
+LIST30 FUSE7 "8000-BFFFH读保护" "无"=FFFF "有"=FFFB
+
+CHIPname=18F8621
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_C
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0A80
+LIST1 FUSE1 "Timer1系统时钟" "关"=FFFF "开"=DFFF
+LIST2 FUSE1 "振荡方式" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "掉电复位电压" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "掉电监测" "开"=FFFF "关"=FFFD
+LIST5 FUSE2 "上电廷时" "关"=FFFF "开"=FFFE
+LIST6 FUSE2 "看门狗" "开"=FFFF "关"=FEFF
+LIST7 FUSE2 "看门狗分频器" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "外部总线等待" "关"=FFFF "开"=FF7F
+LIST9 FUSE3 "处理器模式" "微控制器"=FFFF "微处理器"=FFFE "带启动区的微处理器"=FFFD "扩展微控制器"=FFFC
+LIST10 FUSE3 "MCLR引脚" "作为复位"=FFFF "作为I/O"=7FFF
+LIST11 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST12 FUSE3 "ECCMUX" "ENH CCP1 RE6 3"=FFFF "ENH CCP1 RH7 4"=FDFF
+LIST13 FUSE4 "Debug模式" "关"=FFFF "开"=FF7F
+LIST14 FUSE4 "低电压编程" "开"=FFFF "关"=FFFB
+LIST15 FUSE4 "堆栈溢出复位" "开"=FFFF "关"=FFFE
+LIST16 FUSE5 "0000-07FFH" "不加密"=FFFF "加密"=BFFF
+LIST17 FUSE5 "0800-3FFFH" "不加密"=FFFF "加密"=FFFE
+LIST18 FUSE5 "0400-7FFFH" "不加密"=FFFF "加密"=FFFD
+LIST19 FUSE5 "8000-BFFFH" "不加密"=FFFF "加密"=FFFB
+LIST20 FUSE5 "C000-FFFFH" "不加密"=FFFF "加密"=FFF7
+LIST21 FUSE5 "EEPROM数据" "不加密"=FFFF "加密"=7FFF
+LIST22 FUSE6 "0000-07FFH写保护" "无"=FFFF "有"=BFFF
+LIST23 FUSE6 "0800-3FFFH写保护" "无"=FFFF "有"=FFFE
+LIST24 FUSE6 "4000-7FFFH写保护" "无"=FFFF "有"=FFFD
+LIST25 FUSE6 "8000-BFFFH写保护" "无"=FFFF "有"=17FB
+LIST26 FUSE6 "C000-FFFFH写保护" "无"=FFFF "有"=1FF7
+LIST27 FUSE6 "EEPROM写保护" "无"=FFFF "有"=7FFF
+LIST28 FUSE6 "配置字写保护" "无"=FFFF "有"=DFFF
+LIST29 FUSE7 "0000-07FFH读保护" "无"=FFFF "有"=BFFF
+LIST30 FUSE7 "0800-3FFFH读保护" "无"=FFFF "有"=FFFE
+LIST31 FUSE7 "4000-7FFFH读保护" "无"=FFFF "有"=FFFD
+LIST32 FUSE7 "8000-BFFFH读保护" "无"=FFFF "有"=FFFB
+LIST33 FUSE7 "C000-FFFFH读保护" "无"=FFFF "有"=FFF7
+
+CHIPname=18F2331
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=CF00 3F0F 9D3C 0085 C003 E003 4003
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=08E0
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE2 "Winen" "Enabled"=FFFF "Disabled"=FDFF
+LIST10 FUSE3 "GPTREN" "Disabled"=FFFF "Enabled"=FFDF
+LIST11 FUSE3 "HPOL" "Active High"=FFFF "Active Low"=FFEF
+LIST12 FUSE3 "LPOL" "Active High"=FFFF "Active Low"=FFF7
+LIST13 FUSE3 "PWMPIN" "Disabled"=FFFF "Enabled"=FFFB
+LIST14 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST15 FUSE3 "EXCLKMX" "MUX with RC3"=FFFF "MUX with RD0"=EFFF
+LIST16 FUSE3 "PWM4MX" "Enabled"=FFFF "Disabled"=FDFF
+LIST17 FUSE3 "SSPMX" "MUX RC5,RC4,RC7"=FFFF "MUX RD3,RD2,RD1"=FBFF
+LIST18 FUSE3 "FLTAMX" "MUX with RC1"=FFFF "MUX with RD4"=FEFF
+LIST19 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST20 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST21 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST22 FUSE5 "ROM Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST23 FUSE5 "ROM Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST24 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST25 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST26 FUSE6 "ROM Table Write Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST27 FUSE6 "ROM Table Write Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST28 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST29 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST30 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST31 FUSE7 "ROM Table Read Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST32 FUSE7 "ROM Table Read Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+
+CHIPname=18F2431
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=CF00 3F0F 9D3C 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=08C0
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE2 "Winen" "Enabled"=FFFF "Disabled"=FDFF
+LIST10 FUSE3 "GPTREN" "Disabled"=FFFF "Enabled"=FFDF
+LIST11 FUSE3 "HPOL" "Active High"=FFFF "Active Low"=FFEF
+LIST12 FUSE3 "LPOL" "Active High"=FFFF "Active Low"=FFF7
+LIST13 FUSE3 "PWMPIN" "Disabled"=FFFF "Enabled"=FFFB
+LIST14 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST15 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST16 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST17 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST18 FUSE5 "ROM Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST19 FUSE5 "ROM Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST20 FUSE5 "ROM Protect" "2000-2FFF Disabled"=FFFF "2000-2FFF Enabled"=FFFB
+LIST21 FUSE5 "ROM Protect" "3000-3FFF Disabled"=FFFF "3000-3FFF Enabled"=FFF7
+LIST22 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST23 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST24 FUSE6 "ROM Table Write Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST25 FUSE6 "ROM Table Write Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST26 FUSE6 "ROM Table Write Protect" "2000-2FFF Disabled"=FFFF "2000-2FFF Enabled"=17FB
+LIST27 FUSE6 "ROM Table Write Protect" "3000-3FFF Disabled"=FFFF "3000-3FFF Enabled"=1FF7
+LIST28 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST29 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST30 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST31 FUSE7 "ROM Table Read Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST32 FUSE7 "ROM Table Read Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST33 FUSE7 "ROM Table Read Protect" "2000-2FFF Disabled"=FFFF "2000-2FFF Enabled"=FFFB
+LIST34 FUSE7 "ROM Table Read Protect" "3000-3FFF Disabled"=FFFF "3000-3FFF Enabled"=FFF7
+
+CHIPname=18F4331
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=001000
+EEPROMsize=00000100
+FUSEblank=CF00 3F0F 9D3C 0085 C003 E003 4003
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=08A0
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE2 "Winen" "Enabled"=FFFF "Disabled"=FDFF
+LIST10 FUSE3 "GPTREN" "Disabled"=FFFF "Enabled"=FFDF
+LIST11 FUSE3 "HPOL" "Active High"=FFFF "Active Low"=FFEF
+LIST12 FUSE3 "LPOL" "Active High"=FFFF "Active Low"=FFF7
+LIST13 FUSE3 "PWMPIN" "Disabled"=FFFF "Enabled"=FFFB
+LIST14 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST15 FUSE3 "EXCLKMX" "MUX with RC3"=FFFF "MUX with RD0"=EFFF
+LIST16 FUSE3 "PWM4MX" "Enabled"=FFFF "Disabled"=FDFF
+LIST17 FUSE3 "SSPMX" "MUX RC5,RC4,RC7"=FFFF "MUX RD3,RD2,RD1"=FBFF
+LIST18 FUSE3 "FLTAMX" "MUX with RC1"=FFFF "MUX with RD4"=FEFF
+LIST19 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST20 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST21 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST22 FUSE5 "ROM Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST23 FUSE5 "ROM Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST24 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST25 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST26 FUSE6 "ROM Table Write Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST27 FUSE6 "ROM Table Write Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST28 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST29 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST30 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST31 FUSE7 "ROM Table Read Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST32 FUSE7 "ROM Table Read Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+
+CHIPname=18F4431
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=CF00 3F0F 9D3C 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0880
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "ExRC OSC1 CO OSC2"=FFFF "IRC O1RA7 CO OSC2"=F9FF "IRC O1RA7 O2RA6"=F8FF "ExRC OSC2 RA6"=F7FF "HS+PLL"=F6FF "ExOSC1 CO RA6"=F5FF "ExOSC1 CO OSC2"=F4FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FEFF "1:8192"=FDFF "1:4096"=FCFF "1:2048"=FBFF "1:1024"=FAFF "1:512"=F9FF "1:256"=F8FF "1:128"=F7FF "1:64"=F6FF "1:32"=F5FF "1:16"=F4FF "1:8"=F3FF "1:4"=F2FF "1:2"=F1FF "1:1"=F0FF
+LIST9 FUSE2 "Winen" "Enabled"=FFFF "Disabled"=FDFF
+LIST10 FUSE3 "GPTREN" "Disabled"=FFFF "Enabled"=FFDF
+LIST11 FUSE3 "HPOL" "Active High"=FFFF "Active Low"=FFEF
+LIST12 FUSE3 "LPOL" "Active High"=FFFF "Active Low"=FFF7
+LIST13 FUSE3 "PWMPIN" "Disabled"=FFFF "Enabled"=FFFB
+LIST14 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST15 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST16 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST17 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST18 FUSE5 "ROM Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST19 FUSE5 "ROM Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST20 FUSE5 "ROM Protect" "2000-2FFF Disabled"=FFFF "2000-2FFF Enabled"=FFFB
+LIST21 FUSE5 "ROM Protect" "3000-3FFF Disabled"=FFFF "3000-3FFF Enabled"=FFF7
+LIST22 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST23 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST24 FUSE6 "ROM Table Write Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST25 FUSE6 "ROM Table Write Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST26 FUSE6 "ROM Table Write Protect" "2000-2FFF Disabled"=FFFF "2000-2FFF Enabled"=17FB
+LIST27 FUSE6 "ROM Table Write Protect" "3000-3FFF Disabled"=FFFF "3000-3FFF Enabled"=1FF7
+LIST28 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST29 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST30 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST31 FUSE7 "ROM Table Read Protect" "0200-0FFF Disabled"=FFFF "0200-0FFF Enabled"=FFFE
+LIST32 FUSE7 "ROM Table Read Protect" "1000-1FFF Disabled"=FFFF "1000-1FFF Enabled"=FFFD
+LIST33 FUSE7 "ROM Table Read Protect" "2000-2FFF Disabled"=FFFF "2000-2FFF Enabled"=FFFB
+LIST34 FUSE7 "ROM Table Read Protect" "3000-3FFF Disabled"=FFFF "3000-3FFF Enabled"=FFF7
+
+CHIPname=18F2455
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0500 1F1F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1260
+LIST1 FUSE1 "USBPLL" "Divide by 2"=FFFF "No Divide"=FFDF
+LIST2 FUSE1 "CPUDIV" "Divide by 4"=FFFF "Divide by 3 "=FFF7 "Divide by 2 "=FFEF "NO Divide"=FFE7
+LIST3 FUSE1 "PPLDIV" "Osc/12 (48Mhz)"=FFFF "Osc/10 (40Mhz)"=FFFE "Osc/6 (24Mhz)"=FFFD "Osc/5 (20Mhz)"=FFFC "Osc/4 (16Mhz)"=FFFB "Osc/3 (12Mhz)"=FFFA "Osc/2 (8Mhz)"=FFF9 "No Divide (4Mhz)"=FFF8
+LIST4 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST5 FUSE1 "Oscillator" "HS OSC w/PLL, HS used by USB"=FFFF "HS osc, HS used by USB"=FCFF "Intrn osc, HS used by USB"=FBFF "Intrn osc, XT used by USB"=FAFF
+LIST6 FUSE2 "VREGEN" "Enabled"=FFFF "Disabled"=FFFD
+LIST7 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST8 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST9 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST10 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST11 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST12 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST13 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "High Pwr Mode"=FBFF
+LIST14 FUSE3 "PBADEN" "AD 4:0 Reset=Analog"=FFFF "AD 4:0 Reset=Digital"=FDFF
+LIST15 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST16 FUSE3 "ECCMUX" "ENH CCP1 RE6 3"=FFFF "ENH CCP1 RH7 4"=FDFF
+LIST17 FUSE4 "XINST" "Enabled"=FFFF "Disabled"=FFBF
+LIST18 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST19 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST20 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST21 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST22 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST23 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST24 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST25 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST26 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST27 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST28 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST29 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST30 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST31 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST32 FUSE7 "ROM Table Read Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST33 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+
+CHIPname=18F2550
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0500 1F1F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1240
+LIST1 FUSE1 "USBPLL" "Divide by 2"=FFFF "No Divide"=FFDF
+LIST2 FUSE1 "CPUDIV" "Divide by 4"=FFFF "Divide by 3 "=FFF7 "Divide by 2 "=FFEF "NO Divide"=FFE7
+LIST3 FUSE1 "PPLDIV" "Osc/12 (48Mhz)"=FFFF "Osc/10 (40Mhz)"=FFFE "Osc/6 (24Mhz)"=FFFD "Osc/5 (20Mhz)"=FFFC "Osc/4 (16Mhz)"=FFFB "Osc/3 (12Mhz)"=FFFA "Osc/2 (8Mhz)"=FFF9 "No Divide (4Mhz)"=FFF8
+LIST4 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST5 FUSE1 "Oscillator" "HS OSC w/PLL, HS used by USB"=FFFF "HS osc, HS used by USB"=FCFF "Intrn osc, HS used by USB"=FBFF "Intrn osc, XT used by USB"=FAFF
+LIST6 FUSE2 "VREGEN" "Enabled"=FFFF "Disabled"=FFFD
+LIST7 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST8 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST9 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST10 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST11 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST12 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST13 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "High Pwr Mode"=FBFF
+LIST14 FUSE3 "PBADEN" "AD 4:0 Reset=Analog"=FFFF "AD 4:0 Reset=Digital"=FDFF
+LIST15 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST16 FUSE3 "ECCMUX" "ENH CCP1 RE6 3"=FFFF "ENH CCP1 RH7 4"=FDFF
+LIST17 FUSE4 "XINST" "Enabled"=FFFF "Disabled"=FFBF
+LIST18 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST19 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST20 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST21 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST22 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST23 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST24 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST25 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST26 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST27 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST28 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST29 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST30 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST31 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST32 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST33 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST34 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+
+CHIPname=18F4455
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0500 1F1F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1220
+LIST1 FUSE1 "USBPLL" "Divide by 2"=FFFF "No Divide"=FFDF
+LIST2 FUSE1 "CPUDIV" "Divide by 4"=FFFF "Divide by 3 "=FFF7 "Divide by 2 "=FFEF "NO Divide"=FFE7
+LIST3 FUSE1 "PPLDIV" "Osc/12 (48Mhz)"=FFFF "Osc/10 (40Mhz)"=FFFE "Osc/6 (24Mhz)"=FFFD "Osc/5 (20Mhz)"=FFFC "Osc/4 (16Mhz)"=FFFB "Osc/3 (12Mhz)"=FFFA "Osc/2 (8Mhz)"=FFF9 "No Divide (4Mhz)"=FFF8
+LIST4 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST5 FUSE1 "Oscillator" "HS OSC w/PLL, HS used by USB"=FFFF "HS osc, HS used by USB"=FCFF "Intrn osc, HS used by USB"=FBFF "Intrn osc, XT used by USB"=FAFF
+LIST6 FUSE2 "VREGEN" "Enabled"=FFFF "Disabled"=FFFD
+LIST7 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST8 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST9 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST10 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST11 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST12 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST13 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "High Pwr Mode"=FBFF
+LIST14 FUSE3 "PBADEN" "AD 4:0 Reset=Analog"=FFFF "AD 4:0 Reset=Digital"=FDFF
+LIST15 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST16 FUSE3 "ECCMUX" "ENH CCP1 RE6 3"=FFFF "ENH CCP1 RH7 4"=FDFF
+LIST17 FUSE4 "XINST" "Enabled"=FFFF "Disabled"=FFBF
+LIST18 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST19 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST20 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST21 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST22 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST23 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST24 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST25 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST26 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST27 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST28 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST29 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST30 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST31 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST32 FUSE7 "ROM Table Read Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST33 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+
+CHIPname=18F4550
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0500 1F1F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1200
+LIST1 FUSE1 "USBPLL" "Divide by 2"=FFFF "No Divide"=FFDF
+LIST2 FUSE1 "CPUDIV" "Divide by 4"=FFFF "Divide by 3 "=FFF7 "Divide by 2 "=FFEF "NO Divide"=FFE7
+LIST3 FUSE1 "PPLDIV" "Osc/12 (48Mhz)"=FFFF "Osc/10 (40Mhz)"=FFFE "Osc/6 (24Mhz)"=FFFD "Osc/5 (20Mhz)"=FFFC "Osc/4 (16Mhz)"=FFFB "Osc/3 (12Mhz)"=FFFA "Osc/2 (8Mhz)"=FFF9 "No Divide (4Mhz)"=FFF8
+LIST4 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST5 FUSE1 "Oscillator" "HS OSC w/PLL, HS used by USB"=FFFF "HS osc, HS used by USB"=FCFF "Intrn osc, HS used by USB"=FBFF "Intrn osc, XT used by USB"=FAFF
+LIST6 FUSE2 "VREGEN" "Enabled"=FFFF "Disabled"=FFFD
+LIST7 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST8 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST9 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST10 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST11 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST12 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST13 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "High Pwr Mode"=FBFF
+LIST14 FUSE3 "PBADEN" "AD 4:0 Reset=Analog"=FFFF "AD 4:0 Reset=Digital"=FDFF
+LIST15 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST16 FUSE3 "ECCMUX" "ENH CCP1 RE6 3"=FFFF "ENH CCP1 RH7 4"=FDFF
+LIST17 FUSE4 "XINST" "Enabled"=FFFF "Disabled"=FFBF
+LIST18 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST19 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST20 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST21 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST22 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST23 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST24 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST25 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST26 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST27 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST28 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST29 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST30 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST31 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST32 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST33 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST34 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+
+CHIPname=18F4580
+INCLUDE=Y
+SocketImage=40pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0700 1F1F 8200 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1A80
+LIST1 FUSE1 "Osc Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "LP Osc"=F0FF "XT Osc"=F1FF "HS Osc"=F2FF "Ext RC"=F3FF "EC Osc"=F4FF "EC Port RA6"=F5FF "HSPLL"=F6FF "Ext RC"=F7FF "Int OSC"=F8FF "Int OSC Clk RA6 PortB"=F9FF "Int Osc Clk RA6"=FBFF "Int Osc Clk RA6"=FCFF
+LIST4 FUSE2 "Brownout Voltage" "2.1V"=FFFF "2.8V"=FFF7 "4.3V"=FFFD "4.6V"=FFF9
+LIST5 FUSE2 "Brownout Reset" "HW only"=FFFF "HW but not sleep"=FFFB "Enabled under SW ctrl"=FFFD "Disabled"=FFF0
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST9 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST10 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "High Pwr Mode"=FBFF
+LIST11 FUSE3 "PBADEN" "AD 4:0 Reset=Analog"=FFFF "AD 4:0 Reset=Digital"=FDFF
+LIST12 FUSE3 "BBSIZ" "2K words"=FFFF "1K words"=FEFF
+LIST13 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST14 FUSE4 "XINST" "Enabled"=FFFF "Disabled"=FFBF
+LIST15 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST16 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST17 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST18 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST19 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST20 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST21 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST22 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST23 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST24 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST25 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST26 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST27 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST28 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST29 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST30 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST31 FUSE7 "ROM Table Read Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST32 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST33 FUSE7 "ROM Table Read Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST34 FUSE7 "ROM Table Read Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+
+CHIPname=18F2580
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0700 1F1F 8200 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=1AC0
+LIST1 FUSE1 "Osc Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "LP Osc"=F0FF "XT Osc"=F1FF "HS Osc"=F2FF "Ext RC"=F3FF "EC Osc"=F4FF "EC Port RA6"=F5FF "HSPLL"=F6FF "Ext RC"=F7FF "Int OSC"=F8FF "Int OSC Clk RA6 PortB"=F9FF "Int Osc Clk RA6"=FBFF "Int Osc Clk RA6"=FCFF
+LIST4 FUSE2 "Brownout Voltage" "2.1V"=FFFF "2.8V"=FFF7 "4.3V"=FFFD "4.6V"=FFF9
+LIST5 FUSE2 "Brownout Reset" "HW only"=FFFF "HW but not sleep"=FFFB "Enabled under SW ctrl"=FFFD "Disabled"=FFF0
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST9 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST10 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "High Pwr Mode"=FBFF
+LIST11 FUSE3 "PBADEN" "AD 4:0 Reset=Analog"=FFFF "AD 4:0 Reset=Digital"=FDFF
+LIST12 FUSE3 "BBSIZ" "2K words"=FFFF "1K words"=FEFF
+LIST13 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST14 FUSE4 "XINST" "Enabled"=FFFF "Disabled"=FFBF
+LIST15 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST16 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST17 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST18 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST19 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST20 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST21 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST22 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST23 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST24 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST25 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST26 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST27 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST28 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST29 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST30 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST31 FUSE7 "ROM Table Read Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST32 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST33 FUSE7 "ROM Table Read Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST34 FUSE7 "ROM Table Read Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+
+CHIPname=18F2420
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=002000
+EEPROMsize=00000100
+FUSEblank=0700 1F1F 8300 0085 C003 E003 4003
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0C80
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "LP Osc"=F0FF "XT Osc"=F1FF "HS Osc"=F2FF "Ext RC"=F3FF "EC Osc"=F4FF "EC Port RA6"=F5FF "HSPLL"=F6FF "Ext RC"=F7FF "Int OSC"=F8FF "Int OSC Clk RA6 PortB"=F9FF "Int Osc Clk RA6"=FBFF "Int Osc Clk RA6"=FCFF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST9 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST10 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "HighPower Mode"=FBFF
+LIST11 FUSE3 "PBADEN" "AD 4:0 Analog on Reset"=FFFF "AD 4:0 Digital on Reset"=FDFF
+LIST12 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST13 FUSE3 "BBSIZ" "2K words"=FFFF "1K words"=FEFF
+LIST14 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST15 FUSE4 "XINST" "Enabled"=FFFF "Enabled"=FFBF
+LIST16 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST17 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST18 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST19 FUSE5 "ROM Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST20 FUSE5 "ROM Protect" "0400-7FFF Disabled"=FFFF "0400-7FFF Enabled"=FFFD
+LIST21 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST22 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST23 FUSE6 "ROM Table Write Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST24 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST25 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST26 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST27 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST28 FUSE7 "ROM Table Read Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST29 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+
+CHIPname=18F2520
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=0700 1F1F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0C80
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "LP Osc"=F0FF "XT Osc"=F1FF "HS Osc"=F2FF "Ext RC"=F3FF "EC Osc"=F4FF "EC Port RA6"=F5FF "HSPLL"=F6FF "Ext RC"=F7FF "Int OSC"=F8FF "Int OSC Clk RA6 PortB"=F9FF "Int Osc Clk RA6"=FBFF "Int Osc Clk RA6"=FCFF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST9 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST10 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "HighPower Mode"=FBFF
+LIST11 FUSE3 "PBADEN" "AD 4:0 Analog on Reset"=FFFF "AD 4:0 Digital on Reset"=FDFF
+LIST12 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST13 FUSE3 "BBSIZ" "2K words"=FFFF "1K words"=FEFF
+LIST14 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST15 FUSE4 "XINST" "Enabled"=FFFF "Enabled"=FFBF
+LIST16 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST17 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST18 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST19 FUSE5 "ROM Protect" "0800-1FFF Disabled"=FFFF "0800-1FFF Enabled"=FFFE
+LIST20 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST21 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST22 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST23 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST25 FUSE6 "ROM Table Write Protect" "0800-1FFF Disabled"=FFFF "0800-1FFF Enabled"=FFFE
+LIST26 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST27 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=F7FB
+LIST28 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST29 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST30 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST31 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST32 FUSE7 "ROM Table Read Protect" "0800-1FFF Disabled"=FFFF "0800-1FFF Enabled"=FFFE
+LIST33 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+
+CHIPname=18F2620
+INCLUDE=Y
+SocketImage=28Npin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=0700 1F1F 8300 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0C80
+LIST1 FUSE1 "IE Switchover" "Enabled"=FFFF "Disabled"=7FFF
+LIST2 FUSE1 "Fail Safe Clock Mon" "Enabled"=FFFF "Disabled"=BFFF
+LIST3 FUSE1 "Oscillator" "LP Osc"=F0FF "XT Osc"=F1FF "HS Osc"=F2FF "Ext RC"=F3FF "EC Osc"=F4FF "EC Port RA6"=F5FF "HSPLL"=F6FF "Ext RC"=F7FF "Int OSC"=F8FF "Int OSC Clk RA6 PortB"=F9FF "Int Osc Clk RA6"=FBFF "Int Osc Clk RA6"=FCFF
+LIST4 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST5 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST6 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST9 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST10 FUSE3 "LPT1OSC" "LOW Power Mode"=FFFF "HighPower Mode"=FBFF
+LIST11 FUSE3 "PBADEN" "AD 4:0 Analog on Reset"=FFFF "AD 4:0 Digital on Reset"=FDFF
+LIST12 FUSE3 "CCP2MX" "MUC RC1"=FFFF "MUC RE7/RB3"=FEFF
+LIST13 FUSE3 "BBSIZ" "2K words"=FFFF "1K words"=FEFF
+LIST14 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST15 FUSE4 "XINST" "Enabled"=FFFF "Enabled"=FFBF
+LIST16 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST17 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST18 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST19 FUSE5 "ROM Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST20 FUSE5 "ROM Protect" "0400-7FFF Disabled"=FFFF "0400-7FFF Enabled"=FFFD
+LIST21 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST22 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-7FFF Enabled"=FFF7
+LIST23 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST25 FUSE6 "ROM Table Write Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST26 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST27 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=F7FB
+LIST28 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST29 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST30 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST31 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST32 FUSE7 "ROM Table Read Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST33 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST34 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFD
+
+CHIPname=18F6520
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0183 0085 C0FF E0FF 40FF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0B20
+LIST1 FUSE1 "Oscillator Enable" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RCO2RA6"=FFFF "HSPLL"=FEFF "ECO2RA6"=FDFF "ECO2 CLK Out"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Postscale" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE3 "CCP2 Mux" "Enabled"=FFFF "Disabled"=FEFF
+LIST9 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST10 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST11 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST12 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST13 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST14 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST15 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST16 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST17 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST18 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST19 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST20 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST21 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST22 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST23 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST25 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST26 FUSE7 "ROM Table Read Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST27 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST28 FUSE7 "ROM Table Read Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST29 FUSE7 "ROM Table Read Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+
+CHIPname=18F6620
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0183 0085 C0FF E0FF 40FF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=N
+ChipID=0660
+LIST1 FUSE1 "Oscillator Enable" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RCO2RA6"=FFFF "HSPLL"=FEFF "ECO2RA6"=FDFF "ECO2 CLK Out"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Postscale" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE3 "CCP2 Mux" "Enabled"=FFFF "Disabled"=FEFF
+LIST9 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST10 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST11 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST12 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST13 FUSE5 "ROM Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST14 FUSE5 "ROM Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST15 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST16 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST17 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST18 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST19 FUSE6 "ROM Table Write Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST20 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST21 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST22 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST23 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST25 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST26 FUSE7 "ROM Table Read Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST27 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST28 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST29 FUSE7 "ROM Table Read Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+
+CHIPname=18F6720
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0183 0085 C0FF E0FF 40FF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0620
+LIST1 FUSE1 "Oscillator Enable" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RCO2RA6"=FFFF "HSPLL"=FEFF "ECO2RA6"=FDFF "ECO2 CLK Out"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Postscale" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE3 "CCP2 Mux" "Enabled"=FFFF "Disabled"=FEFF
+LIST9 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST10 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST11 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST12 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST13 FUSE5 "ROM Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST14 FUSE5 "ROM Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST15 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST16 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST17 FUSE5 "ROM Protect" "10000-13FFF Disabled"=FFFF "10000-13FFF Enabled"=FFFE
+LIST18 FUSE5 "ROM Protect" "14000-17FFF Disabled"=FFFF "14000-17FFF Enabled"=FFFD
+LIST19 FUSE5 "ROM Protect" "18000-1BFFF Disabled"=FFFF "18000-1BFFF Enabled"=FFFB
+LIST20 FUSE5 "ROM Protect" "1C000-1FFFF Disabled"=FFFF "1C000-1FFFF Enabled"=FFF7
+LIST21 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST22 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST23 FUSE6 "ROM Table Write Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST24 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST25 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST26 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST27 FUSE6 "ROM Table Write Protect" "10000-13FFF Disabled"=FFFF "10000-13FFF Enabled"=FFFE
+LIST28 FUSE6 "ROM Table Write Protect" "14000-17FFF Disabled"=FFFF "14000-17FFF Enabled"=FFFD
+LIST29 FUSE6 "ROM Table Write Protect" "18000-1BFFF Disabled"=FFFF "18000-1BFFF Enabled"=FFFB
+LIST30 FUSE6 "ROM Table Write Protect" "1C000-1FFFF Disabled"=FFFF "1C000-1FFFF Enabled"=FFF7
+LIST31 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST32 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST33 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST34 FUSE7 "ROM Table Read Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+
+CHIPname=18F8520
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0183 0085 C0FF E0FF 40FF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0B00
+LIST1 FUSE1 "Oscillator Enable" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RCO2RA6"=FFFF "HSPLL"=FEFF "ECO2RA6"=FDFF "ECO2 CLK Out"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Postscale" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE3 "WAIT" "Disabled"=FFFF "MEMCON"=FF7F
+LIST9 FUSE3 "T1OSCMX" "Legacy Timer1"=FFFF "Low Power"=FDFF
+LIST10 FUSE3 "CCP2 Mux" "Enabled"=FFFF "Disabled"=FEFF
+LIST11 FUSE3 "PM1:0" "MicroController"=FFFF "Microprocessor"=FFFE "uProcessor with Boot"=FFFD "Extend uProcessor"=FFFC
+LIST12 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST13 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST14 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST15 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST16 FUSE5 "ROM Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST17 FUSE5 "ROM Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST18 FUSE5 "ROM Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST19 FUSE5 "ROM Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST20 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST21 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST22 FUSE6 "ROM Table Write Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST23 FUSE6 "ROM Table Write Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST24 FUSE6 "ROM Table Write Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST25 FUSE6 "ROM Table Write Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+LIST26 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST27 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST28 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST29 FUSE7 "ROM Table Read Protect" "0200-1FFF Disabled"=FFFF "0200-1FFF Enabled"=FFFE
+LIST30 FUSE7 "ROM Table Read Protect" "2000-3FFF Disabled"=FFFF "2000-3FFF Enabled"=FFFD
+LIST31 FUSE7 "ROM Table Read Protect" "4000-5FFF Disabled"=FFFF "4000-5FFF Enabled"=FFFB
+LIST32 FUSE7 "ROM Table Read Protect" "6000-7FFF Disabled"=FFFF "6000-7FFF Enabled"=FFF7
+
+CHIPname=18F8620
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0183 0085 C0FF E0FF 40FF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0640
+LIST1 FUSE1 "Oscillator Enable" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RCO2RA6"=FFFF "HSPLL"=FEFF "ECO2RA6"=FDFF "ECO2 CLK Out"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Postscale" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE3 "WAIT" "Disabled"=FFFF "MEMCON"=FF7F
+LIST9 FUSE3 "T1OSCMX" "Legacy Timer1"=FFFF "Low Power"=FDFF
+LIST10 FUSE3 "CCP2 Mux" "Enabled"=FFFF "Disabled"=FEFF
+LIST11 FUSE3 "PM1:0" "MicroController"=FFFF "Microprocessor"=FFFE "uProcessor with Boot"=FFFD "Extend uProcessor"=FFFC
+LIST12 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST13 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST14 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST15 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST16 FUSE5 "ROM Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST17 FUSE5 "ROM Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST18 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST19 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST20 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST21 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST22 FUSE6 "ROM Table Write Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST23 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST24 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST25 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST26 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST27 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST28 FUSE7 "BOOT Table Read Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST29 FUSE7 "ROM Table Read Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST30 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST31 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST32 FUSE7 "ROM Table Read Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+
+CHIPname=18F8720
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=004000
+EEPROMsize=00000100
+FUSEblank=2700 0F0F 0183 0085 C0FF E0FF 40FF
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0600
+LIST1 FUSE1 "Oscillator Enable" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RCO2RA6"=FFFF "HSPLL"=FEFF "ECO2RA6"=FDFF "ECO2 CLK Out"=FCFF "RC"=FBFF "HS"=FAFF "XT"=F9FF "LP"=F8FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Postscale" "1:128"=FFFF "1:64"=FDFF "1:32"=FBFF "1:16"=F9FF "1:8"=F7FF "1:4"=F5FF "1:2"=F3FF "1:1"=F1FF
+LIST7 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST8 FUSE3 "WAIT" "Disabled"=FFFF "MEMCON"=FF7F
+LIST9 FUSE3 "CCP2 Mux" "Enabled"=FFFF "Disabled"=FEFF
+LIST10 FUSE3 "PM1:0" "MicroController"=FFFF "Microprocessor"=FFFE "uProcessor with Boot"=FFFD "Extend uProcessor"=FFFC
+LIST11 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST12 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST13 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST14 FUSE5 "BOOT ROM Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST15 FUSE5 "ROM Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST16 FUSE5 "ROM Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST17 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST18 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST19 FUSE5 "ROM Protect" "10000-13FFF Disabled"=FFFF "10000-13FFF Enabled"=FFFE
+LIST20 FUSE5 "ROM Protect" "14000-17FFF Disabled"=FFFF "14000-17FFF Enabled"=FFFD
+LIST21 FUSE5 "ROM Protect" "18000-1BFFF Disabled"=FFFF "18000-1BFFF Enabled"=FFFB
+LIST22 FUSE5 "ROM Protect" "1C000-1FFFF Disabled"=FFFF "1C000-1FFFF Enabled"=FFF7
+LIST23 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "BOOT Table Write Protect" "0000-01FF Disabled"=FFFF "0000-01FF Enabled"=BFFF
+LIST25 FUSE6 "ROM Table Write Protect" "0200-3FFF Disabled"=FFFF "0200-3FFF Enabled"=FFFE
+LIST26 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST27 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST28 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+LIST29 FUSE6 "ROM Table Write Protect" "10000-13FFF Disabled"=FFFF "10000-13FFF Enabled"=FFFE
+LIST30 FUSE6 "ROM Table Write Protect" "14000-17FFF Disabled"=FFFF "14000-17FFF Enabled"=FFFD
+LIST31 FUSE6 "ROM Table Write Protect" "18000-1BFFF Disabled"=FFFF "18000-1BFFF Enabled"=FFFB
+LIST32 FUSE6 "ROM Table Write Protect" "1C000-1FFFF Disabled"=FFFF "1C000-1FFFF Enabled"=FFF7
+LIST33 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST34 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+
+CHIPname=18F6585
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0A60
+LIST1 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST7 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST9 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST10 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST11 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST12 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST13 FUSE5 "ROM Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST14 FUSE5 "ROM Protect" "0400-7FFF Disabled"=FFFF "0400-7FFF Enabled"=FFFD
+LIST15 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST16 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST17 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST18 FUSE6 "ROM Table Write Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST19 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST20 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=17FB
+LIST21 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST22 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST23 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST24 FUSE7 "ROM Table Read Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST25 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST26 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+
+CHIPname=18F6680
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0A20
+LIST1 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST7 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST9 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST10 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST11 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST12 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST13 FUSE5 "ROM Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST14 FUSE5 "ROM Protect" "0400-7FFF Disabled"=FFFF "0400-7FFF Enabled"=FFFD
+LIST15 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST16 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-7FFF Enabled"=FFF7
+LIST17 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST18 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST19 FUSE6 "ROM Table Write Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST20 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST21 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=17FB
+LIST22 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=1FF7
+LIST23 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST25 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST26 FUSE7 "ROM Table Read Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST27 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST28 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST29 FUSE7 "ROM Table Read Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
+
+CHIPname=18F8585
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0A40
+LIST1 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST7 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "WAIT" "Disabled"=FFFF "MEMCON"=FF7F
+LIST9 FUSE3 "Processor Mode" "Microcontroller"=FFFF "Microprocessor"=FFFE "Microprocessor Boot"=FFFD "Extended"=FFFC
+LIST10 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST11 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST12 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST13 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST14 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST15 FUSE5 "ROM Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST16 FUSE5 "ROM Protect" "0400-7FFF Disabled"=FFFF "0400-7FFF Enabled"=FFFD
+LIST17 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST18 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST19 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST20 FUSE6 "ROM Table Write Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST21 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST22 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=17FB
+LIST23 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST24 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST25 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST26 FUSE7 "ROM Table Read Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST27 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST28 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+
+CHIPname=18F8680
+INCLUDE=Y
+SocketImage=0pin
+EraseMode=4
+FlashChip=Y
+PowerSequence=VccVpp1
+ProgramDelay=10
+ProgramTries=1
+OverProgram=1
+CoreType=bit16_B
+ROMsize=008000
+EEPROMsize=00000100
+FUSEblank=2F00 1F0F 8383 0085 C00F E00F 400F
+CPwarn=N
+CALword=N
+BandGap=N
+ICSPonly=Y
+ChipID=0A00
+LIST1 FUSE1 "OSCSEN" "Disabled"=FFFF "Enabled"=DFFF
+LIST2 FUSE1 "Oscillator" "RC OSC2 RA6"=FFFF "HS PLL"=FEFF "EC OSC2RA6"=FDFF "EC OSC2RA6 PLL"= FCFF "RC OSC2RA6"=F7FF "HS PLL"=F6FF "EC OSC2RA6"=F5FF "EC OSC2/4"=F4FF "RC OSC2/4"=F3FF "HS"=F2FF "XT"=F1FF "LP"=F0FF
+LIST3 FUSE2 "Brownout Voltage" "2.0V"=FFFF "2.7V"=FFFB "4.2V"=FFF7 "4.5V"=FFF3
+LIST4 FUSE2 "Brownout Detect" "Enabled"=FFFF "Disabled"=FFFD
+LIST5 FUSE2 "Powerup Timer" "Disabled"=FFFF "Enabled"=FFFE
+LIST6 FUSE2 "Watchdog Timer" "Enabled"=FFFF "Disabled"=FEFF
+LIST7 FUSE2 "Watchdog Postscale" "1:32768"=FFFF "1:16384"=FDFF "1:8192"=FBFF "1:4096"=F9FF "1:2048"=F7FF "1:1024"=F5FF "1:512"=F3FF "1:256"=F1FF "1:128"=EFFF "1:64"=EDFF "1:32"=EBFF "1:16"=E9FF "1:8"=E7FF "1:4"=E5FF "1:2"=E3FF "1:1"=E1FF
+LIST8 FUSE3 "WAIT" "Disabled"=FFFF "MEMCON"=FF7F
+LIST9 FUSE3 "Processor Mode" "Microcontroller"=FFFF "Microprocessor"=FFFE "Microprocessor Boot"=FFFD "Extended"=FFFC
+LIST10 FUSE3 "MCLRE" "Enabled"=FFFF "Disabled"=7FFF
+LIST11 FUSE4 "Background Debug" "Disabled"=FFFF "Enabled"=FF7F
+LIST12 FUSE4 "Low Voltage Program" "Enabled"=FFFF "Disabled"=FFFB
+LIST13 FUSE4 "Stack Overflow Reset" "Enabled"=FFFF "Disabled"=FFFE
+LIST14 FUSE5 "BOOT ROM Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST15 FUSE5 "ROM Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST16 FUSE5 "ROM Protect" "0400-7FFF Disabled"=FFFF "0400-7FFF Enabled"=FFFD
+LIST17 FUSE5 "ROM Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST18 FUSE5 "ROM Protect" "C000-FFFF Disabled"=FFFF "C000-7FFF Enabled"=FFF7
+LIST19 FUSE5 "EEPROM Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST20 FUSE6 "BOOT Table Write Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST21 FUSE6 "ROM Table Write Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST22 FUSE6 "ROM Table Write Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST23 FUSE6 "ROM Table Write Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=17FB
+LIST24 FUSE6 "ROM Table Write Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=1FF7
+LIST25 FUSE6 "EEPROM Table Write Protect" "Disabled"=FFFF "Enabled"=7FFF
+LIST26 FUSE6 "CONFIG Table Write Protect" "Disabled"=FFFF "Enabled"=DFFF
+LIST27 FUSE7 "BOOT Table Read Protect" "0000-07FF Disabled"=FFFF "0000-07FF Enabled"=BFFF
+LIST28 FUSE7 "ROM Table Read Protect" "0800-3FFF Disabled"=FFFF "0800-3FFF Enabled"=FFFE
+LIST29 FUSE7 "ROM Table Read Protect" "4000-7FFF Disabled"=FFFF "4000-7FFF Enabled"=FFFD
+LIST30 FUSE7 "ROM Table Read Protect" "8000-BFFF Disabled"=FFFF "8000-BFFF Enabled"=FFFB
+LIST31 FUSE7 "ROM Table Read Protect" "C000-FFFF Disabled"=FFFF "C000-FFFF Enabled"=FFF7
