@@ -1,0 +1,38 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.025
+Compiler=PCM
+CCSVersion=5.025
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[C:\Users\CaoKy\Downloads\machdieukhiendongco_khoaluan-main\machdieukhiendongco_khoaluan-main\codePICv1\bluetoothUART\main]
+Type=4
+[mru-list]
+1=main.c
+
+[ProjectLog]
+Days=1
+D1=14-03-2021
+D1_L=6
+D1_L1=[43393]Project Opened.
+D1_L2=[43476]Started Editing.
+D1_L3=[44377]Stopped Editing.
+D1_L4=[46805]Started Editing.
+D1_L5=[47221]Stopped Editing.
+TotalEdit=12
+TotalDebug=0
+D1_E=12
+D1_D=0
+D1_L6=[49626]Project Closed.
+
+[Opened Files]
+1=main.c
+2=
+[main.c]
+Type=4
+[Units]
+Count=1
+1=main (main)
