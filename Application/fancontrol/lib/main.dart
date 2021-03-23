@@ -1,9 +1,11 @@
+import 'package:fancontrol/wwmain.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:ping_discover_network/ping_discover_network.dart';
 import 'package:gateway/gateway.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:sleek_circular_slider/sleek_circular_slider.dart';
 
 void main() {
   runApp(MyApp());
@@ -397,6 +399,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   : Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
+                        SleekCircularSlider(
+                            appearance: CircularSliderAppearance(),
+                            onChange: (double value) {
+                              print(value);
+                            }),
                         Text(
                           'Thiết bị bạn đang kết nối:',
                         ),

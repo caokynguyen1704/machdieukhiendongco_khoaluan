@@ -33,6 +33,7 @@ dependencies:
   gateway: ^0.3.0
   http:  ^0.12.2
   web_socket_channel: ^1.2.0
+  sleek_circular_slider: ^2.0.0
 
 dev_dependencies:
   flutter_test:
