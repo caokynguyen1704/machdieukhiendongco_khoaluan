@@ -211,7 +211,28 @@ packages:
       name: web_socket_channel
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.0"
+    version: "2.0.0"
+  wifi:
+    dependency: "direct main"
+    description:
+      name: wifi
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.5"
+  wifi_configuration:
+    dependency: "direct main"
+    description:
+      name: wifi_configuration
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.1"
+  wifi_iot:
+    dependency: "direct main"
+    description:
+      name: wifi_iot
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0"
 sdks:
   dart: ">=2.12.0 <3.0.0"
   flutter: ">=2.0.0"

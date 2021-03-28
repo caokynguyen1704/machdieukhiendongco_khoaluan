@@ -32,9 +32,11 @@ dependencies:
   loading: ^1.0.2
   gateway: ^0.3.0
   http:  ^0.12.2
-  web_socket_channel: ^1.2.0
+  web_socket_channel: ^2.0.0
   sleek_circular_slider: ^2.0.0
-
+  wifi: ^0.1.5
+  wifi_iot: ^0.3.0
+  wifi_configuration: ^1.2.1
 dev_dependencies:
   flutter_test:
     sdk: flutter

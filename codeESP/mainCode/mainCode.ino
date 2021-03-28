@@ -10,8 +10,10 @@ String EQUIPname="Quạt Thông Minh"; //tên thiết bị
 String EQUIPpass; //mật khẩu thiết bị
 String ip;
 String ipHost;
+bool isPass;
 bool isHost;
 String funcRun[5][2];
+String windLV="100";
 //--------------------------------------------------
 bool checkPass(String pass){
   if ((EQUIPpass=="")||(EQUIPpass==pass)){
@@ -51,7 +53,12 @@ void informPage(){ //Trang hiển thị thông tin
     arr2d[i][1]= server.arg(i);         
   }
   if (((arr2d[0][0]=="pass")&&(checkPass(arr2d[0][1])))||(EQUIPpass=="")){
-    String data="{\"name\":\""+EQUIPname+"\",\"isHost\":"+isHost+",\"ipHost\":\""+ipHost+"\",\"ip\":\""+ip+"\"}";
+    if (EQUIPpass==""){
+      isPass=false;
+    }else{
+      isPass=true;
+    }
+    String data="{\"name\":\""+EQUIPname+"\",\"isHost\":"+isHost+",\"isPass\":"+isPass+",\"ipHost\":\""+ipHost+"\",\"ip\":\""+ip+"\"}";
     jsonRep="{\"code\":0,\"msg\":\"Thành công\",\"data\":"+data+"}";
   }else{
     jsonRep="{\"code\":99,\"msg\":\"Sai mã xác thực\"}";
@@ -120,11 +127,11 @@ void statusPage(){ //Trang hiển thị trạng thái
     arr2d[i][1]= server.arg(i);         
   }
   if (((arr2d[0][0]=="pass")&&(checkPass(arr2d[0][1])))||(EQUIPpass=="")){
-    String str="";
+    String str="\"wind\":"+windLV;
     for (int i=0;i<5;i++){
       
         if (funcRun[i][0]!=""){
-          str=str+"\""+funcRun[i][0]+"\":"+funcRun[i][1]+",";
+          str=str+",\""+funcRun[i][0]+"\":"+funcRun[i][1];
         }
 
     }
@@ -162,6 +169,25 @@ void connectPage(){ //Trang đổi wifi
   }
   server.send(200,"application/json",jsonRep);
 }
+void windPage(){ //Trang chỉnh tốc độ gió
+  String jsonRep;
+  int countParameter=server.args();
+  String arr2d[countParameter][2];
+  for (int i = 0; i < server.args(); i++) {
+    arr2d[i][0]=server.argName(i);
+    arr2d[i][1]= server.arg(i);         
+  }
+  if (((arr2d[0][0]=="pass")&&(checkPass(arr2d[0][1])))||(EQUIPpass=="")){
+    if (arr2d[1][0]=="wind"){
+      if (arr2d[1][1].toInt()>=0){
+        windLV=arr2d[1][1];
+      }
+    }
+  }else{
+    jsonRep="{\"code\":99,\"msg\":\"Sai mã xác thực\"}";
+  }
+  server.send(200,"application/json",jsonRep);
+}
 //--------------------------------------------------
 void setup() {
   Serial.begin(115200);
@@ -177,6 +203,7 @@ void setup() {
   server.on("/request",requestPage);
   server.on("/status",statusPage);
   server.on("/connect",connectPage);
+  server.on("/wind",windPage);
   server.begin();
 }
 
