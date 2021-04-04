@@ -1,4 +1,3 @@
-*** Error 12 "main.c" Line 16(3,8): Undefined identifier   TRISB
-*** Error 12 "main.c" Line 17(3,8): Undefined identifier   PORTB
-      2 Errors,  0 Warnings.
-Build Failed.
+      Memory usage:   ROM=2%      RAM=7% - 8%
+      0 Errors,  0 Warnings.
+Build Successful.

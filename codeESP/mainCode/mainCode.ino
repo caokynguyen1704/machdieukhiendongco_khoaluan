@@ -4,6 +4,7 @@
 
 //---------Khai báo biến mặc định------------------
 ESP8266WebServer server(80);
+int pinSS=3;
 String WIFIname; //tên wifi
 String WIFIpass; //mật khẩu wifi
 String EQUIPname="Quạt Thông Minh"; //tên thiết bị
@@ -13,7 +14,7 @@ String ipHost;
 bool isPass;
 bool isHost;
 String funcRun[5][2];
-String windLV="100";
+String windLV="0";
 //--------------------------------------------------
 bool checkPass(String pass){
   if ((EQUIPpass=="")||(EQUIPpass==pass)){
@@ -181,6 +182,9 @@ void windPage(){ //Trang chỉnh tốc độ gió
     if (arr2d[1][0]=="wind"){
       if (arr2d[1][1].toInt()>=0){
         windLV=arr2d[1][1];
+        if (windLV.toInt()>100){
+          windLV="100";
+        }
       }
     }
   }else{
@@ -191,6 +195,10 @@ void windPage(){ //Trang chỉnh tốc độ gió
 //--------------------------------------------------
 void setup() {
   Serial.begin(115200);
+  pinMode(1, OUTPUT);
+  pinMode(pinSS, OUTPUT);
+  digitalWrite(SS,LOW);
+  analogWrite(1, 0);
   bool isCreated=WiFi.softAP (EQUIPname);
   if (isCreated){
     isHost=true;
@@ -209,5 +217,11 @@ void setup() {
 
 void loop() {
   server.handleClient();
-  
+  //digitalWrite(1,HIGH);
+  analogWrite(1, 1023*windLV.toInt()/100);
+  if (windLV.toInt()==0){
+    digitalWrite(pinSS,LOW);
+  }else{
+    digitalWrite(pinSS,HIGH);
+  }
 }

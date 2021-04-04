@@ -1,5 +1,4 @@
 #include <16F877A.h>
-#include <string.h>
 #fuses HS,NOWDT,NOPROTECT,NOLVP
 #use delay(clock = 12000000)
 #use rs232(uart1, baud=9600,ERRORS)

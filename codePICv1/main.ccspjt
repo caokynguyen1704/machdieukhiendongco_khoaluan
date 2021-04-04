@@ -14,7 +14,7 @@ Type=4
 1=main.c
 
 [ProjectLog]
-Days=2
+Days=3
 D1=13-03-2021
 D1_L=13
 D1_L1=[65395]Project Opened.
@@ -22,7 +22,7 @@ D1_L2=[65409]Started Editing.
 D1_L3=[66185]Stopped Editing.
 D1_L4=[66287]Started Editing.
 D1_L5=[66521]Stopped Editing.
-TotalEdit=12
+TotalEdit=22
 TotalDebug=0
 D1_E=12
 D1_D=0
@@ -38,10 +38,18 @@ D2=14-03-2021
 D2_L=2
 D2_L1=[42654]Project Opened.
 D2_L2=[43393]Project Closed.
+D3=28-03-2021
+D3_L=4
+D3_L1=[63655]Project Opened.
+D3_L2=[63683]Started Editing.
+D3_L3=[64556]Stopped Editing.
+D3_E=10
+D3_D=0
+D3_L4=[65400]Project Closed.
 
 [Opened Files]
 1=main.c
-2=..\..\..\..\..\..\Program Files\PICC\Devices\16F877A.h
+2=
 3=..\..\..\..\..\..\Program Files\PICC\Drivers\esp8266.h
 4=..\..\..\..\..\..\Program Files\PICC\Drivers\stdbool.h
 5=
