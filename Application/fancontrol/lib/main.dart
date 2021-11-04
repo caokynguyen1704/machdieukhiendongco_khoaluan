@@ -1,34 +1,20 @@
-import 'dart:async';
-import 'package:fancontrol/wwmain.dart';
+import 'dart:convert';
+import 'dart:io';
+import 'dart:math';
+// import 'package:fancontrol/function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'dart:io';
-import 'package:ping_discover_network/ping_discover_network.dart';
-import 'package:gateway/gateway.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:sleek_circular_slider/sleek_circular_slider.dart';
-import 'package:wifi/wifi.dart';
-import 'package:wifi_configuration/wifi_configuration.dart';
 
 void main() {
   runApp(MyApp());
-}
-
-Future printIps() async {
-  for (var interface in await NetworkInterface.list()) {
-    print('== Interface: ${interface.name} ==');
-    for (var addr in interface.addresses) {
-      print(
-          '${addr.address} ${addr.host} ${addr.isLoopback} ${addr.rawAddress} ${addr.type.name}');
-    }
-  }
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Điều Khiển Thiết Bị',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -49,590 +35,657 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
+var mode = "Chế Độ Bình Thường";
+var wifiName = "Null";
+
 class _MyHomePageState extends State<MyHomePage> {
-  TextEditingController nameWIFI = new TextEditingController();
-  TextEditingController passWIFI = new TextEditingController();
-  TextEditingController nameEdit = new TextEditingController();
-  TextEditingController passEdit = new TextEditingController();
-  List<WifiResult> ssidList = [];
-  bool isEdit = false;
-  bool isHaveIP = false;
-  String ip = "";
-  int _counter = 0;
-  bool isLoad = false;
-  bool isCnBtn = false;
-  List<String> iplist = [""];
-  String nameEquip = "";
-  String loadText = "";
-  bool isCn = false;
-  int isPass = 0;
-  String pass = "";
-  bool truePass = false;
-  double windLv = 0;
-  bool changeWifi = false;
-  bool isSet = false;
-  connect2Esp() async {
-    setState(() {
-      loadText = "Đang kết nối";
-      isLoad = true;
-    });
-    var response = await http.get("http://" + ip + "/inform");
-    var status = await http.get("http://" + ip + "/status");
-    setState(() {
-      isLoad = false;
-    });
-    if (status.statusCode == 200) {
-      var giaima_status = Utf8Decoder().convert(status.bodyBytes);
-      var json_status = jsonDecode(giaima_status);
-      json_status = json_status["data"];
-      windLv = json_status["wind"].toDouble();
-    }
-    if (response.statusCode == 200) {
-      var jsonResponse = jsonDecode(response.body);
-      var giaima = Utf8Decoder().convert(response.bodyBytes);
-      var json = jsonDecode(giaima);
-      print("json:  ${json["data"]}");
-      json = json["data"];
-      // convert.jsonDecode(response.body);
-      nameEquip = json['name'];
-      isPass = json["isPass"];
-      if (isPass == 0) {
-        truePass = true;
-      }
-
-      isCn = true;
-      return 1;
-    } else {
-      return 0;
-    }
-  }
-
-  connect2Esp_noload() async {
-    if (ip != "") {
-      var response = await http.get("http://" + ip + "/inform");
-      var status = await http.get("http://" + ip + "/status");
-
-      if ((response.statusCode == 200) && ((status.statusCode == 200))) {
-        var jsonResponse = jsonDecode(response.body);
-        var giaima = Utf8Decoder().convert(response.bodyBytes);
-        var json = jsonDecode(giaima);
-        var giaima_status = Utf8Decoder().convert(status.bodyBytes);
-        var json_status = jsonDecode(giaima_status);
-        print(json_status);
-        setState(() {
-          json_status = json_status["data"];
-          windLv = json_status["wind"].toDouble();
-          json = json["data"];
-          nameEquip = json['name'];
-          isPass = json["isPass"];
-        });
-        return 1;
-      } else {
-        return 0;
-      }
-    }
-  }
-
-  updateData() {
-    Timer.periodic(Duration(seconds: 1), (timer) async {
-      await connect2Esp_noload();
-    });
-  }
-
-  void _checkIP() async {
-    setState(() {
-      loadText = "Vui lòng chờ";
-      isLoad = true;
-    });
-    isHaveIP = false;
-    _counter = 0;
-    isCnBtn = false;
-    iplist = [""];
-    nameEquip = "";
-    isCn = false;
-    ip = "";
-    Gateway gt = await Gateway.info;
-    print(gt.ip);
-    const port = 80;
-    String gateway = "";
-    for (int i = 0; i < gt.ip.length - 2; i++) {
-      gateway = gateway + gt.ip[i];
-    }
-    print(gateway);
-    final stream0 = NetworkAnalyzer.discover2(
-      gateway,
-      port,
-      timeout: Duration(milliseconds: 5000),
-    );
-    int found = 0;
-    stream0.listen((NetworkAddress addr) {
-      //print('${addr.ip}:$port');
-      if (addr.exists) {
-        found++;
-        print('Found device: ${addr.ip}:$port');
-        if (iplist.contains(addr.ip)) {
-          print("Trùng");
-        } else {
-          iplist.add(addr.ip);
-        }
-      }
-    }).onDone(() {
-      print('Finish. Found $found device(s)');
-      setState(() {
-        isLoad = false;
-      });
-    });
-  }
-
-  void loadData() async {
-    Wifi.list('').then((list) {
-      setState(() {
-        ssidList = list;
-      });
-    });
+  int selectedIndex = 1;
+  var ip = "192.168.4.1";
+  @override
+  void dispose() {
+    SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+    super.dispose();
   }
 
   @override
   void initState() {
+    SystemChrome.setEnabledSystemUIOverlays([]);
     super.initState();
-    _checkIP();
-    updateData();
-    loadData();
   }
 
-  setWind(int value) {
-    var response = http.get("http://" + ip + "/wind?pass=&wind=${value}");
-    // if (response.statusCode == 200) {
-    //   print("ok");
-    // } else {
-    //   print("not ok");
-    // }
-  }
-
-  turnMode(int value) async {
-    var response = await http
-        .get("http://" + ip + "/control?key=${nameEquip}&equip=${value}");
-    if (response.statusCode == 200) {
-      print("ok");
-    } else {
-      print("not ok");
+  Color BgColor(int index) {
+    if (index == selectedIndex) {
+      return Colors.white;
     }
+    return Colors.black;
   }
 
-  changeName() async {
-    var response = await http
-        .get("http://" + ip + "/edit?key=${nameEquip}&name=${nameEdit.text}");
-    if (response.statusCode == 200) {
-      print("ok");
-    } else {
-      print("not ok");
-    }
-    connect2Esp();
+  void _onItemTapped(int index) {
     setState(() {
-      isEdit = false;
+      selectedIndex = index;
     });
   }
 
-  changeWifiFunc() async {
-    if (nameWIFI.text != "") {
-      var response = await http.get("http://" +
-          ip +
-          "/connect?pass=&nameW=${nameWIFI.text}&passW=${passWIFI.text}");
-      if (response.statusCode == 200) {
-        print(response.body);
-        setState(() {
-          changeWifi = false;
-        });
-      } else {
-        print("not ok");
-      }
-    }
+  sendUdp(String ip, String dataString) {
+    int port = 20001;
+    RawDatagramSocket.bind(InternetAddress.anyIPv4, port).then((socket) {
+      socket.send(Utf8Codec().encode(dataString), InternetAddress(ip), port);
+      socket.listen((event) {
+        if (event == RawSocketEvent.write) {
+          socket.close();
+          print("single closed");
+        }
+      });
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    var boardInform = new Container(
-        margin: const EdgeInsets.all(30.0),
-        padding: const EdgeInsets.all(10.0),
-        decoration: BoxDecoration(
-          border: Border.all(width: 3.0),
-          borderRadius: BorderRadius.all(
-              Radius.circular(30.0) //                 <--- border radius here
-              ),
-        ),
-        child: Column(children: [
+    var title =
+        new Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+      Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
           Text(
-            "Tên thiết bị: $nameEquip",
-            style: TextStyle(fontSize: 15.0),
+            "Smart Fan",
+            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
           ),
           Text(
-            "IP thiết bị: $ip",
-            style: TextStyle(fontSize: 15.0),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              SizedBox(
-                width: 75, // <-- match_parent
-                height: 22,
-                child: FlatButton.icon(
-                    icon: Icon(Icons.edit, size: 10),
-                    onPressed: () {
-                      setState(() {
-                        isEdit = !(isEdit);
-                        print(isEdit);
-                      });
-                    },
-                    label: Text("Đổi tên", style: TextStyle(fontSize: 8)),
-                    color: Colors.yellow[700],
-                    shape: RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(50.0))),
-              ),
-              SizedBox(
-                width: 75, // <-- match_parent
-                height: 22,
-                child: FlatButton.icon(
-                    icon: Icon(Icons.wifi, size: 10),
-                    onPressed: () async {
-                      setState(() {
-                        changeWifi = !(changeWifi);
-                      });
-                    },
-                    label: Text("Wifi", style: TextStyle(fontSize: 8)),
-                    color: Colors.yellow[700],
-                    shape: RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(50.0))),
-              ),
-              SizedBox(
-                width: 75, // <-- match_parent
-                height: 22,
-                child: FlatButton.icon(
-                    icon: Icon(Icons.power_off, size: 10),
-                    onPressed: () {},
-                    label: Text("Tắt Máy", style: TextStyle(fontSize: 8)),
-                    color: Colors.red[700],
-                    shape: RoundedRectangleBorder(
-                        borderRadius: new BorderRadius.circular(50.0))),
-              ),
-            ],
+            "Vì cuộc sống hiện đại",
+            style: TextStyle(
+                fontSize: 17, color: Colors.grey, fontWeight: FontWeight.bold),
           )
-        ]));
-    var editName = new Stack(
+        ],
+      ),
+      Icon(
+        Icons.wifi,
+        color: Colors.blue,
+      ),
+    ]);
+    var normalMode = new Column(
       children: [
-        Column(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-                width: 200,
-                child: TextField(
-                  controller: nameEdit,
-                  decoration: InputDecoration(hintText: 'Tên mới'),
-                )),
-            SizedBox(
-              width: 65, // <-- match_parent
-              height: 22,
-              child: FlatButton.icon(
-                  icon: Icon(Icons.edit_outlined, size: 10),
-                  onPressed: changeName,
-                  label: Text("Đổi", style: TextStyle(fontSize: 8)),
-                  color: Colors.red[700],
-                  shape: RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(50.0))),
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<SPEED<25");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.looks_one_rounded,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          'Mức 1',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<SPEED<50");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.looks_two_rounded,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          'Mức 2',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<SPEED<75");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.looks_3,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          'Mức 3',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<SPEED<100");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.looks_4,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          'Mức 4',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
             ),
           ],
         )
       ],
     );
-    var controlForm = new Column(children: [
-      boardInform,
-      Container(
-        height: 300,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+    var timerMode = new Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text("Bạn đang kết nối tới ${nameEquip}"),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                SleekCircularSlider(
-                    initialValue: windLv,
-                    appearance: CircularSliderAppearance(
-                        infoProperties: InfoProperties(
-                            bottomLabelText: "Tốc độ gió tối đa"),
-                        customColors: CustomSliderColors(
-                            trackColor: Colors.grey,
-                            progressBarColor: Colors.blue)),
-                    onChange: (double value) {
-                      setWind(value.toInt());
-                    }),
-                Container(
-                  height: 120,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SizedBox(
-                        width: 150, // <-- match_parent
-                        height: 50,
-                        child: FlatButton.icon(
-                            icon: Icon(Icons.ac_unit),
-                            onPressed: () => turnMode(2),
-                            label: Text("Gió Tự Nhiên"),
-                            color: Colors.blue,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(50.0))),
-                      ),
-                      SizedBox(
-                        width: 150, // <-- match_parent
-                        height: 50,
-                        child: FlatButton.icon(
-                            icon: Icon(Icons.timer),
-                            onPressed: () => turnMode(3),
-                            label: Text("Hẹn Giờ"),
-                            color: Colors.blue,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: new BorderRadius.circular(50.0))),
-                      ),
-                    ],
-                  ),
-                )
-              ],
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<TIMER<30");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.more_time_rounded,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          '30p',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(
-                  width: 100, // <-- match_parent
-                  height: 50,
-                  child: FlatButton.icon(
-                      icon: Icon(Icons.ac_unit),
-                      onPressed: () => setWind(30),
-                      label: Text("30%"),
-                      color: Colors.blue[100],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(50.0))),
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<TIMER<60");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
                 ),
-                SizedBox(
-                  width: 100, // <-- match_parent
-                  height: 50,
-                  child: FlatButton.icon(
-                      icon: Icon(Icons.ac_unit),
-                      onPressed: () => setWind(60),
-                      label: Text("60%"),
-                      color: Colors.blue[100],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(50.0))),
-                ),
-                SizedBox(
-                  width: 100, // <-- match_parent
-                  height: 50,
-                  child: FlatButton.icon(
-                      icon: Icon(Icons.ac_unit),
-                      onPressed: () => setWind(90),
-                      label: Text("90%"),
-                      color: Colors.blue[100],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(50.0))),
-                ),
-              ],
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.more_time_rounded,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          '1h',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
             ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 100, // <-- match_parent
-                  height: 50,
-                  child: FlatButton.icon(
-                      icon: Icon(Icons.ac_unit),
-                      onPressed: () => setWind(0),
-                      label: Text("OFF"),
-                      color: Colors.red[100],
-                      shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(50.0))),
-                ),
-              ],
-            )
           ],
         ),
-      ),
-      isEdit ? editName : Container(),
-    ]);
-    var passInput = new Container(
-      child: Column(
-        children: [
-          Text("Nhập mật khẩu"),
-          TextField(
-            controller: passEdit,
-            decoration: InputDecoration(hintText: "Nhập:"),
-          )
-        ],
-      ),
-    );
-    var bodyProgress = new Container(
-      child: new Stack(
-        children: <Widget>[
-          new Container(
-            alignment: AlignmentDirectional.center,
-            decoration: new BoxDecoration(
-              color: Colors.white70,
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<TIMER<120");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.more_time_rounded,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          '2h',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
             ),
-            child: new Container(
-              decoration: new BoxDecoration(
-                  color: Colors.transparent, //blue[200],
-                  borderRadius: new BorderRadius.circular(10.0)),
-              width: 300.0,
-              height: 200.0,
-              alignment: AlignmentDirectional.center,
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  new Center(
-                    child: new SizedBox(
-                      height: 50.0,
-                      width: 50.0,
-                      child: new CircularProgressIndicator(
-                        value: null,
-                        strokeWidth: 7.0,
-                      ),
-                    ),
+            RaisedButton(
+              color: Colors.blue,
+              onPressed: () {
+                sendUdp(ip, "<TIMER<240");
+              },
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(80.0)),
+              padding: const EdgeInsets.all(0.0),
+              child: Ink(
+                decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(100.0)),
+                ),
+                child: Container(
+                    padding: EdgeInsets.all(2),
+                    width: MediaQuery.of(context).size.width / 2 / 3,
+                    height: MediaQuery.of(context).size.height / 20,
+                    alignment: Alignment.center,
+                    child: Column(
+                      children: [
+                        Icon(
+                          Icons.more_time_rounded,
+                          size: MediaQuery.of(context).size.width / 25,
+                          color: Colors.black,
+                        ),
+                        Text(
+                          '4h',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 40,
+                              color: Colors.black),
+                        ),
+                      ],
+                    )),
+              ),
+            ),
+          ],
+        )
+      ],
+    );
+    var modeBtn = new Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        FlatButton(
+          minWidth: MediaQuery.of(context).size.width / 3.2,
+          height: MediaQuery.of(context).size.width / 3.2,
+          color: Colors.blue,
+          shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(40.0)),
+          child: Column(
+            children: [
+              Icon(
+                Icons.grass,
+                color: Colors.white,
+                size: MediaQuery.of(context).size.width / 15,
+              ),
+              Text(
+                "Gió tự nhiên",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: MediaQuery.of(context).size.width / 30),
+              )
+            ],
+          ),
+          onPressed: () {
+            sendUdp(ip, "<MODE<NATURALWIND");
+          },
+        ),
+        FlatButton(
+          minWidth: MediaQuery.of(context).size.width / 3.2,
+          height: MediaQuery.of(context).size.width / 3.2,
+          color: Colors.blue,
+          shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(40.0)),
+          child: Column(
+            children: [
+              Icon(
+                Icons.control_camera_sharp,
+                color: Colors.white,
+                size: MediaQuery.of(context).size.width / 15,
+              ),
+              Text(
+                "Bình thường",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: MediaQuery.of(context).size.width / 30),
+              )
+            ],
+          ),
+          onPressed: () {
+            sendUdp(ip, "<MODE<NORMALWIND");
+          },
+        ),
+        FlatButton(
+          minWidth: MediaQuery.of(context).size.width / 3.2,
+          height: MediaQuery.of(context).size.width / 3.2,
+          color: Colors.blue,
+          shape: new RoundedRectangleBorder(
+              borderRadius: new BorderRadius.circular(40.0)),
+          child: Column(
+            children: [
+              Icon(
+                Icons.timer,
+                color: Colors.white,
+                size: MediaQuery.of(context).size.width / 15,
+              ),
+              Text(
+                "Hẹn giờ",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: MediaQuery.of(context).size.width / 30),
+              )
+            ],
+          ),
+          onPressed: () {
+            sendUdp(ip, "<MODE<TIMER");
+          },
+        )
+      ],
+    );
+    var screenInform = Column(children: [
+      Container(
+          width: MediaQuery.of(context).size.width / 1.1,
+          height: MediaQuery.of(context).size.height / 8,
+          margin: EdgeInsets.only(bottom: 10, top: 10),
+          padding: EdgeInsets.all(15),
+          decoration: BoxDecoration(
+              color: Colors.white,
+              // border: Border.all(
+              //     color: Colors.blue, // Set border color
+              //     width: 3.0),
+              borderRadius: BorderRadius.all(
+                  Radius.circular(40.0)), // Set rounded corner radius
+              boxShadow: [
+                BoxShadow(blurRadius: 10, offset: Offset(1, 3))
+              ] // Make rounded corner of border
+              ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Text(
+                    "IP: ",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
-                  new Container(
-                    margin: const EdgeInsets.only(top: 25.0),
-                    child: new Center(
-                      child: new Text(
-                        loadText,
-                        style: new TextStyle(color: Colors.black),
-                      ),
-                    ),
+                  Text(
+                    "${ip}",
+                    style: TextStyle(fontSize: 18),
                   ),
                 ],
               ),
+              Row(
+                children: [
+                  Text(
+                    "Chế Độ: ",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "${mode}",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Text(
+                    "Wifi: ",
+                    style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "${wifiName}",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ],
+              ),
+            ],
+          ))
+    ]);
+    var power = new Row(
+      children: [
+        RaisedButton(
+          color: Colors.red,
+          onPressed: () {
+            sendUdp(ip, "<POWER<1");
+          },
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(80.0)),
+          padding: const EdgeInsets.all(0.0),
+          child: Ink(
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(100.0)),
             ),
+            child: Container(
+                padding: EdgeInsets.all(2),
+                width: MediaQuery.of(context).size.width / 2 / 3,
+                height: MediaQuery.of(context).size.height / 20,
+                alignment: Alignment.center,
+                child: Column(
+                  children: [
+                    Icon(
+                      Icons.power_settings_new,
+                      size: MediaQuery.of(context).size.width / 25,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      'Nguồn',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          fontSize: MediaQuery.of(context).size.width / 40,
+                          color: Colors.white),
+                    ),
+                  ],
+                )),
           ),
+        )
+      ],
+    );
+    var changeSpeedWind =
+        new Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+      Container(
+          width: MediaQuery.of(context).size.width / 1.7,
+          padding: EdgeInsets.only(top: 50),
+          child: SleekCircularSlider(
+              initialValue: 0,
+              min: 0,
+              max: 100,
+              appearance: CircularSliderAppearance(
+                  size: MediaQuery.of(context).size.width / 2,
+                  infoProperties: InfoProperties(
+                    bottomLabelText: "Tốc Độ",
+                    bottomLabelStyle:
+                        TextStyle(color: Colors.blue, fontSize: 30),
+                  ),
+                  customColors: CustomSliderColors(
+                      dotColor: Colors.blue,
+                      hideShadow: true,
+                      trackColor: Colors.grey[200],
+                      progressBarColor: Colors.blue)),
+              onChange: (double value) {
+                int giatri = value.ceil();
+                if (value > 100) {
+                  giatri = 100;
+                } else if (value < 0) {
+                  giatri = 0;
+                }
+
+                sendUdp(ip, "<SPEED<${giatri / 2}");
+              }))
+    ]);
+    var switchBtn = Column(
+      children: [
+        power,
+        Text(
+          "MODE",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        normalMode,
+        Text(
+          "TIMER",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
+        timerMode,
+      ],
+    );
+    var getIpPage = new Container(
+      child: Column(
+        children: [
+          title,
+          Container(
+            child: screenInform,
+          ),
+          Container(
+            height: MediaQuery.of(context).size.height / 5,
+          ),
+          Container(
+              child: Row(
+            children: [changeSpeedWind, switchBtn],
+          )),
+          modeBtn,
         ],
       ),
     );
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
+      //appBar: AppBar(title: Text(widget.title),),
+      body: Container(
+        child: getIpPage,
       ),
-      body: isCn
-          ? truePass
-              ? Stack(children: [
-                  controlForm,
-                  changeWifi
-                      ? Center(
-                          child: Stack(
-                          children: [
-                            Container(
-                                height: 250,
-                                width: 300,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(10),
-                                      topRight: Radius.circular(10),
-                                      bottomLeft: Radius.circular(10),
-                                      bottomRight: Radius.circular(10)),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 5,
-                                      blurRadius: 7,
-                                      offset: Offset(
-                                          0, 3), // changes position of shadow
-                                    ),
-                                  ],
-                                ),
-                                child: Center(
-                                    child: Padding(
-                                  padding: EdgeInsets.only(top: 20),
-                                  child: Column(
-                                    children: [
-                                      Text(
-                                        "Kết Nối WIFI",
-                                        style: TextStyle(fontSize: 20),
-                                      ),
-                                      Container(
-                                        width: 200,
-                                        child: TextField(
-                                          controller: nameWIFI,
-                                          decoration: InputDecoration(
-                                              hintText: "TÊN SSID"),
-                                        ),
-                                      ),
-                                      Container(
-                                        width: 200,
-                                        child: TextField(
-                                          controller: passWIFI,
-                                          decoration: InputDecoration(
-                                              hintText: "MẬT KHẨU SSID"),
-                                        ),
-                                      ),
-                                      FlatButton(
-                                          onPressed: changeWifiFunc,
-                                          child: Text("Kết nối"))
-                                    ],
-                                  ),
-                                ))),
-                            Positioned(
-                              child: CloseButton(
-                                color: Colors.red,
-                                onPressed: () {
-                                  setState(() {
-                                    changeWifi = false;
-                                  });
-                                },
-                              ),
-                            )
-                          ],
-                        ))
-                      : SizedBox(),
-                ])
-              : passInput
-          : Center(
-              child: isLoad
-                  ? bodyProgress
-                  : Stack(children: [
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Text(
-                            'Thiết bị bạn đang kết nối:',
-                          ),
-                          new DropdownButton<String>(
-                            items: iplist.map((String value) {
-                              return new DropdownMenuItem<String>(
-                                value: value,
-                                child: new Text(value),
-                              );
-                            }).toList(),
-                            onChanged: (val) {
-                              if (val != "") {
-                                isCnBtn = true;
-                              } else if (val.length < 3) {
-                                isCnBtn = false;
-                              } else {
-                                isCnBtn = false;
-                              }
-                              setState(() {
-                                ip = val;
-                              });
-                            },
-                            value: ip,
-                          ),
-                          isCnBtn
-                              ? FlatButton.icon(
-                                  onPressed: connect2Esp,
-                                  icon: Icon(Icons.connected_tv),
-                                  label: Text("Kết nối"))
-                              : Text("Vui lòng chọn thiết bị"),
-                        ],
-                      ),
-                    ])),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _checkIP,
-        tooltip: 'Làm mới',
-        child: Icon(Icons.refresh_outlined),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.shifting,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            backgroundColor: BgColor(0),
+            icon: Icon(Icons.settings),
+            label: 'Setting',
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: BgColor(1),
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: BgColor(2),
+            icon: Icon(Icons.update_outlined),
+            label: 'Update',
+          ),
+        ],
+        currentIndex: selectedIndex,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey[400],
+        onTap: _onItemTapped,
+        //backgroundColor: Colors.grey,
+      ),
     );
   }
 }

@@ -37,6 +37,7 @@ dependencies:
   wifi: ^0.1.5
   wifi_iot: ^0.3.0
   wifi_configuration: ^1.2.1
+  udp: ^3.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

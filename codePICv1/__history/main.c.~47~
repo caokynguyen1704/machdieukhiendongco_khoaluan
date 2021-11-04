@@ -10,7 +10,7 @@ void main(){
   setup_adc_ports(AN0);                  
   set_adc_channel(0);                  
   setup_ccp1(CCP_PWM);                  
-  setup_timer_2(T2_DIV_BY_16,62,1);//125=12000000/(Hz*16*4) =>1k4 Hz
+  setup_timer_2(T2_DIV_BY_16,187,1);//125=12000000/(Hz*16*4) =>1k4 Hz
   delay_ms(100);       
   
  

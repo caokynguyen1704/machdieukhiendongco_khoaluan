@@ -1,18 +1,18 @@
-CCS PCM C Compiler, Version 5.025, 28035               28-Mar-21 17:50
+CCS PCM C Compiler, Version 5.025, 28035               05-May-21 15:14
 
                Filename:   C:\Users\CaoKy\Documents\GitHub\machdieukhiendongco_khoaluan\codePICv1\main.lst
 
-               ROM used:   199 words (2%)
+               ROM used:   120 words (1%)
                            Largest free fragment is 2048
-               RAM used:   27 (7%) at main() level
-                           28 (8%) worst case
+               RAM used:   11 (3%) at main() level
+                           12 (3%) worst case
                Stack used: 1 locations
                Stack size: 8
 
 *
 0000:  MOVLW  00
 0001:  MOVWF  0A
-0002:  GOTO   04C
+0002:  GOTO   019
 0003:  NOP
 .................... #include <16F877A.h> 
 .................... //////////// Standard Header file for the PIC16F877A device //////////////// 
@@ -26,57 +26,6 @@ CCS PCM C Compiler, Version 5.025, 28035               28-Mar-21 17:50
 .................... //// form are not restricted in any way.                               //// 
 .................... /////////////////////////////////////////////////////////////////////////// 
 .................... #device PIC16F877A 
-0004:  DATA C7,22
-0005:  DATA 54,10
-0006:  DATA AF,39
-0007:  DATA F4,30
-0008:  DATA F4,3A
-0009:  DATA 73,10
-000A:  DATA 48,2A
-000B:  DATA 54,28
-000C:  DATA AF,18
-000D:  DATA AE,18
-000E:  DATA 0D,05
-000F:  DATA C8,37
-0010:  DATA 73,3A
-0011:  DATA 3A,10
-0012:  DATA B1,1C
-0013:  DATA 32,17
-0014:  DATA 31,1B
-0015:  DATA 38,17
-0016:  DATA 34,17
-0017:  DATA B1,06
-0018:  DATA 8A,06
-0019:  DATA 0A,00
-001A:  DATA 41,2A
-001B:  DATA AB,21
-001C:  DATA 49,28
-001D:  DATA 53,2A
-001E:  DATA 41,29
-001F:  DATA D4,1E
-0020:  DATA 22,2A
-0021:  DATA 43,28
-0022:  DATA 22,16
-0023:  DATA A2,12
-0024:  DATA 73,11
-0025:  DATA 2C,1C
-0026:  DATA B0,06
-0027:  DATA 0A,00
-0028:  DATA 41,2A
-0029:  DATA AB,21
-002A:  DATA 49,28
-002B:  DATA D3,22
-002C:  DATA 4E,22
-002D:  DATA BD,12
-002E:  DATA E9,06
-002F:  DATA 0A,00
-0030:  DATA 41,2A
-0031:  DATA AB,21
-0032:  DATA 49,28
-0033:  DATA 43,26
-0034:  DATA CF,29
-0035:  DATA C5,06
-0036:  DATA 0A,00
 ....................  
 .................... #list 
 ....................  
@@ -465,9 +414,9 @@ CCS PCM C Compiler, Version 5.025, 28035               28-Mar-21 17:50
 ....................    unsigned char *beg, *end; 
 ....................    static char *save; 
 *
-0064:  BCF    03.5
-0065:  CLRF   20
-0066:  CLRF   21
+002F:  BCF    03.5
+0030:  CLRF   20
+0031:  CLRF   21
 ....................  
 ....................    beg = (s1)? s1: save; 
 ....................    beg += strspn(beg, s2); 
@@ -571,191 +520,139 @@ CCS PCM C Compiler, Version 5.025, 28035               28-Mar-21 17:50
 .................... #fuses HS,NOWDT,NOPROTECT,NOLVP 
 .................... #use delay(clock = 12000000) 
 *
-0037:  MOVLW  36
-0038:  MOVWF  04
-0039:  BCF    03.7
-003A:  MOVF   00,W
-003B:  BTFSC  03.2
-003C:  GOTO   04B
-003D:  MOVLW  03
-003E:  MOVWF  78
-003F:  CLRF   77
-0040:  DECFSZ 77,F
-0041:  GOTO   040
-0042:  DECFSZ 78,F
-0043:  GOTO   03F
-0044:  MOVLW  E3
-0045:  MOVWF  77
-0046:  DECFSZ 77,F
-0047:  GOTO   046
-0048:  NOP
-0049:  DECFSZ 00,F
-004A:  GOTO   03D
-004B:  RETURN
+0004:  MOVLW  26
+0005:  MOVWF  04
+0006:  BCF    03.7
+0007:  MOVF   00,W
+0008:  BTFSC  03.2
+0009:  GOTO   018
+000A:  MOVLW  03
+000B:  MOVWF  78
+000C:  CLRF   77
+000D:  DECFSZ 77,F
+000E:  GOTO   00D
+000F:  DECFSZ 78,F
+0010:  GOTO   00C
+0011:  MOVLW  E3
+0012:  MOVWF  77
+0013:  DECFSZ 77,F
+0014:  GOTO   013
+0015:  NOP
+0016:  DECFSZ 00,F
+0017:  GOTO   00A
+0018:  RETURN
 .................... #use rs232(uart1, baud=9600,ERRORS) 
 .................... unsigned int16 i ; 
-.................... char *host="192.168.4.1"; 
-*
-0067:  MOVLW  31
-0068:  MOVWF  27
-0069:  MOVLW  39
-006A:  MOVWF  28
-006B:  MOVLW  32
-006C:  MOVWF  29
-006D:  MOVLW  2E
-006E:  MOVWF  2A
-006F:  MOVLW  31
-0070:  MOVWF  2B
-0071:  MOVLW  36
-0072:  MOVWF  2C
-0073:  MOVLW  38
-0074:  MOVWF  2D
-0075:  MOVLW  2E
-0076:  MOVWF  2E
-0077:  MOVLW  34
-0078:  MOVWF  2F
-0079:  MOVLW  2E
-007A:  MOVWF  30
-007B:  MOVLW  31
-007C:  MOVWF  31
-007D:  CLRF   32
-007E:  CLRF   26
-007F:  MOVLW  27
-0080:  MOVWF  25
 ....................  
-....................  
-.................... void ESP8266_init() 
-.................... { 
-....................  //printf("AT\r\n");delay_ms(500); 
-....................  //printf("ATE0\r\n");delay_ms(500); 
-....................  //printf("AT+CWMODE=1\r\n");delay_ms(500); 
-....................  //printf("AT+CWJAP=\"%s\",\"%s\"\r\n",SSID,PASS);delay_ms(4000); // thay mat khau va tai khoan tuong ung 
-....................  //printf("AT+CIPMUX=0\r\n");delay_ms(500); 
-.................... } 
-....................  
-....................  
-.................... void getRequest(){ 
-....................   int length;  
-....................   char data[90]; 
-....................   sprintf(data,"GET /status HTTP/1.1\r\nHost: 192.168.4.1\r\n\r\n"); 
-....................   printf("AT+CIPSTART=\"TCP\",\"%s\",80\r\n",host);delay_ms(2000);  
-....................   length=strlen(data); 
-....................   printf("AT+CIPSEND=%i\r\n",length);delay_ms(500); 
-....................   printf(data);delay_ms(1000); 
-....................   printf("AT+CIPCLOSE\r\n");delay_ms(200); 
-.................... } 
 .................... void main(){ 
-*
-004C:  MOVF   03,W
-004D:  ANDLW  1F
-004E:  MOVWF  03
-004F:  CLRF   22
-0050:  MOVLW  4D
-0051:  BSF    03.5
-0052:  MOVWF  19
-0053:  MOVLW  A6
-0054:  MOVWF  18
-0055:  MOVLW  90
-0056:  BCF    03.5
-0057:  MOVWF  18
-0058:  CLRF   34
-0059:  CLRF   33
-005A:  MOVLW  FF
-005B:  MOVWF  35
-005C:  BSF    03.5
-005D:  BSF    1F.0
-005E:  BSF    1F.1
-005F:  BSF    1F.2
-0060:  BCF    1F.3
-0061:  MOVLW  07
-0062:  MOVWF  1C
-0063:  BCF    03.7
+0019:  MOVF   03,W
+001A:  ANDLW  1F
+001B:  MOVWF  03
+001C:  CLRF   22
+001D:  MOVLW  4D
+001E:  BSF    03.5
+001F:  MOVWF  19
+0020:  MOVLW  A6
+0021:  MOVWF  18
+0022:  MOVLW  90
+0023:  BCF    03.5
+0024:  MOVWF  18
+0025:  MOVLW  FF
+0026:  MOVWF  25
+0027:  BSF    03.5
+0028:  BSF    1F.0
+0029:  BSF    1F.1
+002A:  BSF    1F.2
+002B:  BCF    1F.3
+002C:  MOVLW  07
+002D:  MOVWF  1C
+002E:  BCF    03.7
 ....................   setup_adc(ADC_CLOCK_DIV_32);          
 *
-0081:  BSF    03.5
-0082:  BCF    1F.6
-0083:  BCF    03.5
-0084:  BCF    1F.6
-0085:  BSF    1F.7
-0086:  BSF    03.5
-0087:  BCF    1F.7
-0088:  BCF    03.5
-0089:  BSF    1F.0
+0032:  BSF    03.5
+0033:  BCF    1F.6
+0034:  BCF    03.5
+0035:  BCF    1F.6
+0036:  BSF    1F.7
+0037:  BSF    03.5
+0038:  BCF    1F.7
+0039:  BCF    03.5
+003A:  BSF    1F.0
 ....................   setup_adc_ports(AN0);                   
-008A:  BSF    03.5
-008B:  BCF    1F.0
-008C:  BSF    1F.1
-008D:  BSF    1F.2
-008E:  BSF    1F.3
+003B:  BSF    03.5
+003C:  BCF    1F.0
+003D:  BSF    1F.1
+003E:  BSF    1F.2
+003F:  BSF    1F.3
 ....................   set_adc_channel(0);                   
-008F:  MOVLW  00
-0090:  MOVWF  78
-0091:  BCF    03.5
-0092:  MOVF   1F,W
-0093:  ANDLW  C7
-0094:  IORWF  78,W
-0095:  MOVWF  1F
+0040:  MOVLW  00
+0041:  MOVWF  78
+0042:  BCF    03.5
+0043:  MOVF   1F,W
+0044:  ANDLW  C7
+0045:  IORWF  78,W
+0046:  MOVWF  1F
 ....................   setup_ccp1(CCP_PWM);                   
-0096:  BCF    35.2
-0097:  MOVF   35,W
-0098:  BSF    03.5
-0099:  MOVWF  07
-009A:  BCF    03.5
-009B:  BCF    07.2
-009C:  MOVLW  0C
-009D:  MOVWF  17
-....................   setup_timer_2(T2_DIV_BY_16,125,1);//125=12000000/(Hz*16*4) =>1k4 Hz 
-009E:  MOVLW  00
-009F:  MOVWF  78
-00A0:  IORLW  06
-00A1:  MOVWF  12
-00A2:  MOVLW  7D
-00A3:  BSF    03.5
-00A4:  MOVWF  12
+0047:  BCF    25.2
+0048:  MOVF   25,W
+0049:  BSF    03.5
+004A:  MOVWF  07
+004B:  BCF    03.5
+004C:  BCF    07.2
+004D:  MOVLW  0C
+004E:  MOVWF  17
+....................   setup_timer_2(T2_DIV_BY_16,62,1);//125=12000000/(Hz*16*4) =>1k4 Hz 
+004F:  MOVLW  00
+0050:  MOVWF  78
+0051:  IORLW  06
+0052:  MOVWF  12
+0053:  MOVLW  3E
+0054:  BSF    03.5
+0055:  MOVWF  12
 ....................   delay_ms(100);        
-00A5:  MOVLW  64
-00A6:  BCF    03.5
-00A7:  MOVWF  36
-00A8:  CALL   037
+0056:  MOVLW  64
+0057:  BCF    03.5
+0058:  MOVWF  26
+0059:  CALL   004
 ....................    
 ....................   
 ....................   while(TRUE){ 
 ....................     i = read_adc();                     
-00A9:  BSF    1F.2
-00AA:  BTFSC  1F.2
-00AB:  GOTO   0AA
-00AC:  CLRF   24
-00AD:  MOVF   1E,W
-00AE:  MOVWF  23
+005A:  BSF    1F.2
+005B:  BTFSC  1F.2
+005C:  GOTO   05B
+005D:  CLRF   24
+005E:  MOVF   1E,W
+005F:  MOVWF  23
 ....................     set_pwm1_duty(i);                    
-00AF:  MOVF   24,W
-00B0:  MOVWF  79
-00B1:  MOVF   23,W
-00B2:  MOVWF  78
-00B3:  RRF    79,F
-00B4:  RRF    78,F
-00B5:  RRF    79,F
-00B6:  RRF    78,F
-00B7:  RRF    79,F
-00B8:  MOVF   78,W
-00B9:  MOVWF  15
-00BA:  RRF    79,F
-00BB:  RRF    79,W
-00BC:  ANDLW  30
-00BD:  MOVWF  77
-00BE:  MOVF   17,W
-00BF:  ANDLW  CF
-00C0:  IORWF  77,W
-00C1:  MOVWF  17
+0060:  MOVF   24,W
+0061:  MOVWF  79
+0062:  MOVF   23,W
+0063:  MOVWF  78
+0064:  RRF    79,F
+0065:  RRF    78,F
+0066:  RRF    79,F
+0067:  RRF    78,F
+0068:  RRF    79,F
+0069:  MOVF   78,W
+006A:  MOVWF  15
+006B:  RRF    79,F
+006C:  RRF    79,W
+006D:  ANDLW  30
+006E:  MOVWF  77
+006F:  MOVF   17,W
+0070:  ANDLW  CF
+0071:  IORWF  77,W
+0072:  MOVWF  17
 ....................     delay_ms(10);                        
-00C2:  MOVLW  0A
-00C3:  MOVWF  36
-00C4:  CALL   037
-00C5:  GOTO   0A9
+0073:  MOVLW  0A
+0074:  MOVWF  26
+0075:  CALL   004
+0076:  GOTO   05A
 ....................    } 
 .................... } 
 ....................  
-00C6:  SLEEP
+0077:  SLEEP
 
 Configuration Fuses:
    Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

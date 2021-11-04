@@ -4,7 +4,7 @@
 
 //---------Khai báo biến mặc định------------------
 ESP8266WebServer server(80);
-int pinSS=3;
+#define PWM 16
 String WIFIname; //tên wifi
 String WIFIpass; //mật khẩu wifi
 String EQUIPname="Quạt Thông Minh"; //tên thiết bị
@@ -185,20 +185,23 @@ void windPage(){ //Trang chỉnh tốc độ gió
         if (windLV.toInt()>100){
           windLV="100";
         }
+        analogWrite(PWM,( windLV.toInt()*10));
       }
     }
   }else{
     jsonRep="{\"code\":99,\"msg\":\"Sai mã xác thực\"}";
   }
+  String str="{<w>["+windLV+"]}";
+
+  Serial.print(str);
+  Serial.write("{<w>[100]}");
   server.send(200,"application/json",jsonRep);
 }
 //--------------------------------------------------
 void setup() {
-  Serial.begin(115200);
-  pinMode(1, OUTPUT);
-  pinMode(pinSS, OUTPUT);
-  digitalWrite(SS,LOW);
-  analogWrite(1, 0);
+  Serial.begin(9600);
+  analogWriteFreq(1000);
+  pinMode(PWM,OUTPUT);
   bool isCreated=WiFi.softAP (EQUIPname);
   if (isCreated){
     isHost=true;
@@ -218,10 +221,13 @@ void setup() {
 void loop() {
   server.handleClient();
   //digitalWrite(1,HIGH);
-  analogWrite(1, 1023*windLV.toInt()/100);
-  if (windLV.toInt()==0){
-    digitalWrite(pinSS,LOW);
-  }else{
-    digitalWrite(pinSS,HIGH);
-  }
+//  int check=Serial.available();
+//   byte aaa = Serial.read();
+//if(check > 0){
+// 
+//
+//    // say what you got:
+//    Serial.print("I received: ");
+//    Serial.println(aaa);
+//}
 }
